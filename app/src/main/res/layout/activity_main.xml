@@ -215,7 +215,7 @@
             android:layout_width="378dp"
             android:layout_height="53dp"
             android:background="@color/colormadush"
-            android:text="@string/dresses_co_ords"
+            android:text="@string/dresses_cords"
             android:textColor="@color/colordarkgrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

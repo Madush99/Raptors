@@ -54,8 +54,8 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="144dp"
-            android:layout_height="53dp"
+            android:layout_width="95dp"
+            android:layout_height="48dp"
             android:fontFamily="cursive"
             android:text="Helinsa "
             android:textColor="@color/colormadush"

@@ -80,13 +80,13 @@
 
     <EditText
         android:id="@+id/editTextPhone5"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="364dp"
-        android:layout_width="276dp"
-        android:layout_height="30dp"
+        android:layout_width="275dp"
+        android:layout_height="33dp"
         android:ems="10"
         android:inputType="phone"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="397dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName18"
@@ -136,12 +136,12 @@
     <EditText
         android:id="@+id/editTextPhone6"
         android:layout_width="275dp"
-        android:layout_height="25dp"
+        android:layout_height="33dp"
         android:ems="10"
         android:inputType="phone"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="301dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="328dp" />
 
     <EditText
         android:id="@+id/editTextPhone7"
@@ -149,9 +149,9 @@
         android:layout_height="30dp"
         android:ems="10"
         android:inputType="phone"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="108dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="115dp" />
 
     <TextView
         android:id="@+id/textView38"
@@ -263,7 +263,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="332dp"
+        android:layout_marginBottom="368dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -299,7 +299,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="400dp"
+        android:layout_marginBottom="432dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"

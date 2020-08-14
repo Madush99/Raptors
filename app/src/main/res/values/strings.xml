@@ -3,4 +3,7 @@
     <string name="denim_jeans"><![CDATA[Denim & Jeans]]></string>
     <string name="shorts_skirts"><![CDATA[Shorts & Skirts]]></string>
     <string name="dresses_c0_ords"><![CDATA[Dresses & C0-ORDS]]></string>
+    <string name="pricetag"><![CDATA[Price]]></string>
+    <string name="dress_model"><![CDATA[Model]]></string>
+    <string name="buy_now1">Buy Now</string>
 </resources>

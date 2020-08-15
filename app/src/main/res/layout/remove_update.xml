@@ -146,7 +146,7 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName13"
-        android:layout_width="134dp"
+        android:layout_width="158dp"
         android:layout_height="31dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -203,7 +203,7 @@
         android:layout_height="27dp"
         android:background="#FFFFFF"
         android:fontFamily="sans-serif-condensed"
-        android:text="Payment Method"
+        android:text="Card Type"
         android:textColor="#0E0E0E"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"

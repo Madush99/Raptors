@@ -4,7 +4,7 @@
     <string name="shorts_skirts"><![CDATA[Shorts & Skirts]]></string>
     <string name="dresses_c0_ords"><![CDATA[Dresses & C0-ORDS]]></string>
     <string name="dresses_cords"><![CDATA[Dresses & Cords]]></string>
-    <string name="pricetag"><![CDATA[Price - ]]></string>
+    <string name="pricetag"><![CDATA[Price -]]></string>
     <string name="dress_model"><![CDATA[Model]]></string>
     <string name="buy_now1"><![CDATA[Buy Now]]></string>
     <string name="cloth_size"><![CDATA[Size - ]]></string>
@@ -17,6 +17,18 @@
     <string name="clothes_bag">My Bag</string>
     <string name="helinsa">Helinsa</string>
     <string name="total_price">Total Price - </string>
-
+    //payment
+    <string name="pay_number"><![CDATA[Number]]></string>
+    <string name="pay_firstname"><![CDATA[First name]]></string>
+    <string name="pay_lastname"><![CDATA[Last name]]></string>
+    <string name="pay_phone"><![CDATA[Phone]]></string>
+    <string name="pay_email"><![CDATA[Email]]></string>
+    <string name="pay_card1"><![CDATA[Visa]]></string>
+    <string name="pay_card2"><![CDATA[Master Card]]></string>
+    <string name="pay_card3"><![CDATA[American Express]]></string>
+    <string name="pay_cvv"><![CDATA[CVV]]></string>
+    <string name="pay_ex"><![CDATA[Expires]]></string>
+    <string name="pay_street"><![CDATA[Street]]></string>
+    <string name="pay_city"><![CDATA[City]]></string>
 
 </resources>

@@ -6,25 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="140dp"
-            android:layout_height="48dp"
-            android:fontFamily="cursive"
-            android:text="Helinsa "
-            android:textColor="@color/colormadush"
-            android:textSize="60px"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.627"
-            app:layout_constraintStart_toStartOf="@+id/searchView"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.963" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -67,53 +49,26 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="96dp"
-            android:layout_height="24dp"
-            android:fontFamily="monospace"
-            android:text="Guys"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.142"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.117" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="98dp"
-            android:layout_height="25dp"
-            android:fontFamily="monospace"
-            android:text="Girls"
-            android:textColor="@color/colormadush"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.884"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.116" />
-
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="180dp"
             android:layout_height="220dp"
-            android:layout_marginEnd="264dp"
+            android:layout_marginEnd="260dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.237"
+            app:layout_constraintVertical_bias="0.209"
             app:srcCompat="@drawable/login" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="208dp"
             android:layout_height="218dp"
-            android:layout_marginStart="244dp"
+            android:layout_marginStart="240dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.239"
+            app:layout_constraintVertical_bias="0.213"
             app:srcCompat="@drawable/register" />
 
         <ImageView
@@ -122,9 +77,10 @@
             android:layout_height="222dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.525"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.234"
+            app:layout_constraintVertical_bias="0.21"
             app:srcCompat="@drawable/fg" />
 
         <TextView
@@ -135,10 +91,10 @@
             android:textColor="@color/colordarkgrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.373"
+            app:layout_constraintHorizontal_bias="0.374"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.54" />
+            app:layout_constraintVertical_bias="0.525" />
 
         <TextView
             android:id="@+id/textView5"
@@ -148,10 +104,10 @@
             android:textColor="@color/colormadush"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.633"
+            app:layout_constraintHorizontal_bias="0.65"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.54" />
+            app:layout_constraintVertical_bias="0.525" />
 
         <Button
             android:id="@+id/button"
@@ -308,6 +264,21 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.991" />
 
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:fontFamily="cursive"
+            android:text="Helinsa "
+            android:textColor="@color/colormadush"
+            android:textSize="60px"
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.948" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

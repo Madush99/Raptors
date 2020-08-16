@@ -4,7 +4,17 @@
     <string name="shorts_skirts"><![CDATA[Shorts & Skirts]]></string>
     <string name="dresses_c0_ords"><![CDATA[Dresses & C0-ORDS]]></string>
     <string name="dresses_cords"><![CDATA[Dresses & Cords]]></string>
-    <string name="pricetag"><![CDATA[Price Tag]]></string>
-    <string name="dress_model"><![CDATA[Model]]></string>
+    <string name="pricetag"><![CDATA[Price - ]]></string>
+    <string name="dress_model"><![CDATA[Model - ]]></string>
     <string name="buy_now1"><![CDATA[Buy Now]]></string>
+    <string name="cloth_size"><![CDATA[Size - ]]></string>
+    <string name="cloth_qty"><![CDATA[Qty - ]]></string>
+    <string name="ofz_frock">Office Frock</string>
+    <string name="price_lkr2000">LKR2000</string>
+    <string name="size_mid">Medium</string>
+    <string name="price_lkr3000">LKR3000</string>
+    <string name="price_lkr3500">LKR3500</string>
+    <string name="clothes_bag">My Bag</string>
+    <string name="helinsa">Helinsa</string>
+    <string name="total_price">Total Price - </string>
 </resources>

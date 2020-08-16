@@ -6,20 +6,23 @@
     android:layout_height="match_parent"
     android:background="@android:color/background_light">
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CATEGORY"
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="126dp"
+        android:layout_height="49dp"
+        android:backgroundTint="#000000"
+        android:text="@string/buy_now1"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintHorizontal_bias="0.919"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.991" />
+        app:layout_constraintVertical_bias="0.87" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/textView72"
         android:layout_width="73dp"
         android:layout_height="37dp"
         android:layout_marginEnd="156dp"
@@ -34,8 +37,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.949" />
 
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:text="@string/cloth_size"
+        android:textColor="@color/colormadush"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438" />
+
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imageView87"
         android:layout_width="39dp"
         android:layout_height="41dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,18 +62,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.949"
         app:srcCompat="@drawable/category" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="47dp"
-        android:layout_height="37dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.943"
-        app:srcCompat="@drawable/jn" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -69,6 +74,88 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.943"
         app:srcCompat="@drawable/bag" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:text="@string/cloth_size"
+        android:textColor="@color/colormadush"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="115dp"
+        android:layout_height="30dp"
+        android:text="@string/cloth_size"
+        android:textColor="@color/colormadush"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.712" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CATEGORY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:text="@string/ofz_frock"
+        android:textColor="@color/colormadush"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/size_mid"
+        android:textColor="@color/colormadush"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.439" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:text="@string/ofz_frock"
+        android:textColor="@color/colormadush"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.33" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -83,16 +170,82 @@
         app:srcCompat="@drawable/me" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SHOP"
+        android:text="ME"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.991" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/size_mid"
+        android:textColor="@color/colormadush"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.754"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:text="@string/ofz_frock"
+        android:textColor="@color/colormadush"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="111dp"
+        android:layout_height="30dp"
+        android:text="@string/price_lkr2000"
+        android:textColor="@color/colormadush"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="47dp"
+        android:layout_height="37dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943"
+        app:srcCompat="@drawable/jn" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="134dp"
+        android:layout_height="123dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.709"
+        app:srcCompat="@drawable/cart3" />
 
     <TextView
         android:id="@+id/textView24"
@@ -102,18 +255,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.736"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.991" />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ME"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.991" />
@@ -130,6 +271,72 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.288" />
 
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/size_mid"
+        android:textColor="@color/colormadush"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.699" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHOP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="111dp"
+        android:layout_height="30dp"
+        android:text="@string/price_lkr3500"
+        android:textColor="@color/colormadush"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="111dp"
+        android:layout_height="30dp"
+        android:text="LKR8500"
+        android:textColor="@color/colormadush"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="132dp"
+        android:layout_height="125dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395"
+        app:srcCompat="@drawable/cart2" />
+
     <View
         android:id="@+id/divider2"
         android:layout_width="409dp"
@@ -139,87 +346,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="145dp"
-        android:layout_height="149dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422"
-        app:srcCompat="@drawable/cart2" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="143dp"
-        android:layout_height="138dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784"
-        app:srcCompat="@drawable/cart3" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="92dp"
-        android:layout_height="35dp"
-        android:text="@string/pricetag"
-        android:textColor="@color/colormadush"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.781" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="92dp"
-        android:layout_height="35dp"
-        android:text="@string/pricetag"
-        android:textColor="@color/colormadush"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.449" />
-
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="92dp"
-        android:layout_height="35dp"
-        android:text="@string/pricetag"
-        android:textColor="@color/colormadush"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.114" />
-
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="71dp"
-        android:layout_height="34dp"
-        android:text="@string/dress_model"
-        android:textColor="@color/colormadush"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintVertical_bias="0.554" />
 
     <TextView
         android:id="@+id/textView31"
@@ -230,10 +357,116 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.338" />
+        app:layout_constraintVertical_bias="0.334" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="111dp"
+        android:layout_height="30dp"
+        android:text="@string/price_lkr3000"
+        android:textColor="@color/colormadush"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="92dp"
+        android:layout_height="35dp"
+        android:text="@string/pricetag"
+        android:textColor="@color/colormadush"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="92dp"
+        android:layout_height="35dp"
+        android:text="@string/pricetag"
+        android:textColor="@color/colormadush"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="71dp"
+        android:layout_height="34dp"
+        android:text="@string/dress_model"
+        android:textColor="@color/colormadush"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="33dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.779"
+        app:srcCompat="@drawable/arrows3" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="32dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509"
+        app:srcCompat="@drawable/arrows3" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="92dp"
+        android:layout_height="35dp"
+        android:text="@string/pricetag"
+        android:textColor="@color/colormadush"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="31dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.235"
+        app:srcCompat="@drawable/arrows3" />
 
     <TextView
         android:id="@+id/textView32"
@@ -244,21 +477,182 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664" />
+        app:layout_constraintVertical_bias="0.608" />
 
     <ImageView
         android:id="@+id/imageView20"
-        android:layout_width="144dp"
-        android:layout_height="145dp"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.031"
+        app:layout_constraintVertical_bias="0.094"
         app:srcCompat="@drawable/cartw1" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cloth_qty"
+        android:textColor="@color/colormadush"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="36dp"
+        android:layout_height="28dp"
+        android:text="@string/cloth_qty"
+        android:textColor="@color/colormadush"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="50dp"
+        android:layout_height="31dp"
+        android:text="@string/cloth_qty"
+        android:textColor="@color/colormadush"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231"
+        app:srcCompat="@drawable/bin4" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/bin4" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761"
+        app:srcCompat="@drawable/bin4" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        android:text="  1"
+        android:textColor="@color/colormadush"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.235" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        android:text="  1"
+        android:textColor="@color/colormadush"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        android:text="2"
+        android:textColor="@color/colormadush"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.763" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="106dp"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/clothes_bag"
+        android:textColor="@color/colormadush"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bag" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_price"
+        android:textColor="@color/colormadush"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

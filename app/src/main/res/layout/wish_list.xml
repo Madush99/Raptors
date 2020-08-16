@@ -76,7 +76,7 @@
         android:id="@+id/textView66"
         android:layout_width="170dp"
         android:layout_height="47dp"
-        android:text="@string/wish_list"
+        android:text="@string/wishlist1"
         android:textColor="@color/colormadush"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

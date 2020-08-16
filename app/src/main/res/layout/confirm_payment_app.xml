@@ -87,10 +87,10 @@
         android:layout_width="363dp"
         android:layout_height="111dp"
         android:textSize="18sp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="234dp"
-        tools:text="Logitech G402 Second Generation Wired Game Mouse RGB Professional Competition For Pc Mouse Gamer For Computer Laptop Accessories"
-        tools:ignore="MissingConstraints" />
+        tools:text="Logitech G402 Second Generation Wired Game Mouse RGB Professional Competition For Pc Mouse Gamer For Computer Laptop Accessories" />
 
     <Button
         android:id="@+id/button2"
@@ -110,16 +110,16 @@
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="198dp"
-        android:layout_height="43dp"
+        android:layout_width="113dp"
+        android:layout_height="46dp"
         android:background="#FFFFFF"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Your Payment"
+        android:fontFamily="cursive"
+        android:text="Helinsa"
         android:textColor="#000000"
-        android:textSize="30sp"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.085" />
@@ -130,7 +130,7 @@
         android:layout_height="24dp"
         android:background="#FFFFFF"
         android:text="Thanks for dealing with US!"
-        android:textColor="#EA175E"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

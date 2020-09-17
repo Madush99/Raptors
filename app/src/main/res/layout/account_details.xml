@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/my_finder1">
+    android:background="">
 
     <Button
         android:id="@+id/button4"
         android:layout_width="250dp"
         android:layout_height="49dp"
         android:background="@drawable/btn"
+        android:fontFamily="sans-serif-condensed"
         android:text="Account Details"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,6 +26,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btn"
+        android:fontFamily="sans-serif-condensed"
         android:text="ADD card details"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,6 +41,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btn"
+        android:fontFamily="sans-serif-condensed"
         android:text="change card details"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -53,6 +56,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btn"
+        android:fontFamily="sans-serif-condensed"
         android:text="change app settings"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -67,6 +71,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btn"
+        android:fontFamily="sans-serif-condensed"
         android:text="Log out"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"

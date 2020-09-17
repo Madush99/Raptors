@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "334488918608",
+    "firebase_url": "https://paymentsapp-ac17d.firebaseio.com",
+    "project_id": "paymentsapp-ac17d",
+    "storage_bucket": "paymentsapp-ac17d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334488918608:android:118e00ff5300bea7518f55",
+        "android_client_info": {
+          "package_name": "com.example.shoppingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334488918608-c28jkj22nrrpjbjsfamb3vrj0ug4sdn1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shoppingapp",
+            "certificate_hash": "515856914bc4827dc768c3c1797081acf44dccfd"
+          }
+        },
+        {
+          "client_id": "334488918608-q03gfddcuije0i7a9h9su4r3teqr1rkg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_SI3Dg285XwPCkhZDyn_t5J4aQeIPka4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334488918608-q03gfddcuije0i7a9h9su4r3teqr1rkg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

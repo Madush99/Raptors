@@ -1,32 +1,20 @@
 {
   "project_info": {
-<<<<<<< HEAD
     "project_number": "182560936531",
     "firebase_url": "https://shoppingapp-bead2.firebaseio.com",
     "project_id": "shoppingapp-bead2",
     "storage_bucket": "shoppingapp-bead2.appspot.com"
-=======
-    "project_number": "334488918608",
-    "firebase_url": "https://paymentsapp-ac17d.firebaseio.com",
-    "project_id": "paymentsapp-ac17d",
-    "storage_bucket": "paymentsapp-ac17d.appspot.com"
->>>>>>> origin/master
   },
   "client": [
     {
       "client_info": {
-<<<<<<< HEAD
         "mobilesdk_app_id": "1:182560936531:android:90a595b20632ce1d9faca6",
-=======
-        "mobilesdk_app_id": "1:334488918608:android:118e00ff5300bea7518f55",
->>>>>>> origin/master
         "android_client_info": {
           "package_name": "com.example.shoppingapp"
         }
       },
       "oauth_client": [
         {
-<<<<<<< HEAD
           "client_id": "182560936531-hga9t05shje0ole4vhueq25ule30kg9k.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -36,38 +24,19 @@
         },
         {
           "client_id": "182560936531-3nvcigfpr2662t8l7cosg89uqdar1505.apps.googleusercontent.com",
-=======
-          "client_id": "334488918608-c28jkj22nrrpjbjsfamb3vrj0ug4sdn1.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.shoppingapp",
-            "certificate_hash": "515856914bc4827dc768c3c1797081acf44dccfd"
-          }
-        },
-        {
-          "client_id": "334488918608-q03gfddcuije0i7a9h9su4r3teqr1rkg.apps.googleusercontent.com",
->>>>>>> origin/master
           "client_type": 3
         }
       ],
       "api_key": [
         {
-<<<<<<< HEAD
           "current_key": "AIzaSyDXNhjGXFAnipAG5iLggTxMnOTmIfVdx5s"
-=======
-          "current_key": "AIzaSyC_SI3Dg285XwPCkhZDyn_t5J4aQeIPka4"
->>>>>>> origin/master
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-<<<<<<< HEAD
               "client_id": "182560936531-3nvcigfpr2662t8l7cosg89uqdar1505.apps.googleusercontent.com",
-=======
-              "client_id": "334488918608-q03gfddcuije0i7a9h9su4r3teqr1rkg.apps.googleusercontent.com",
->>>>>>> origin/master
               "client_type": 3
             }
           ]

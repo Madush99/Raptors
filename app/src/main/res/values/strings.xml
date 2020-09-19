@@ -47,6 +47,12 @@
     <string name="address1">Postal Address</string>
     <string name="contact1">Phone Number</string>
     <string name="wishlist1">Wish List</string>
+    <string name="account_details">Account Details</string>
+    <string name="add_card_details">ADD card details</string>
+    <string name="change_card_details">change card details</string>
+    <string name="change_app_settings">change app settings</string>
+    <string name="log_out">Log out</string>
+    <string name="todo">TODO</string>
 </resources>
 
 

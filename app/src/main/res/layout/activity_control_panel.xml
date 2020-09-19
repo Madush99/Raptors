@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="">
-
+    tools:context=".control_panel">
     <Button
         android:id="@+id/button4"
         android:layout_width="250dp"
@@ -22,7 +21,7 @@
         app:layout_constraintVertical_bias="0.367" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/addDetail"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btn"
@@ -37,7 +36,7 @@
         app:layout_constraintVertical_bias="0.461" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/changeDetails"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btn"

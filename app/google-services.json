@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "182560936531",
+    "firebase_url": "https://shoppingapp-bead2.firebaseio.com",
+    "project_id": "shoppingapp-bead2",
+    "storage_bucket": "shoppingapp-bead2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182560936531:android:90a595b20632ce1d9faca6",
+        "android_client_info": {
+          "package_name": "com.example.shoppingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182560936531-hga9t05shje0ole4vhueq25ule30kg9k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shoppingapp",
+            "certificate_hash": "349dc0b214334886595479a77ec93567f1962dac"
+          }
+        },
+        {
+          "client_id": "182560936531-3nvcigfpr2662t8l7cosg89uqdar1505.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXNhjGXFAnipAG5iLggTxMnOTmIfVdx5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182560936531-3nvcigfpr2662t8l7cosg89uqdar1505.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

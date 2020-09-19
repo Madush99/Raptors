@@ -35,4 +35,19 @@
     <string name="pay_ex"><![CDATA[Expires]]></string>
     <string name="pay_street"><![CDATA[Street]]></string>
     <string name="pay_city"><![CDATA[City]]></string>
+
+
+    <string name="my_orders1">My Orders</string>
+    <string name="go_shop1">Go Shopping</string>
+    <string name="size_guide1">Size Guide</string>
+    <string name="edit1">Edit Profile</string>
+    <string name="user_prof">My Profile</string>
+    <string name="name1">Name</string>
+    <string name="mail">Email</string>
+    <string name="address1">Postal Address</string>
+    <string name="contact1">Phone Number</string>
+    <string name="wishlist1">Wish List</string>
 </resources>
+
+
+

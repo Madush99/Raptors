@@ -8,24 +8,34 @@
 
     <EditText
         android:id="@+id/editTextPhone9"
-        android:layout_width="295dp"
-        android:layout_height="56dp"
+        android:layout_width="276dp"
+        android:layout_height="30dp"
         android:ems="10"
         android:inputType="phone"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton14"
+        android:layout_width="151dp"
+        android:layout_height="27dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/pay_card3"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.723"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.776" />
 
     <TextView
         android:id="@+id/textView26"
         android:layout_width="72dp"
         android:layout_height="30dp"
         android:background="#FFFFFF"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="sans-serif-condensed"
         android:text="@string/pay_number"
         android:textColor="#0E0E0E"
         android:textSize="18sp"
@@ -38,52 +48,44 @@
 
     <EditText
         android:id="@+id/editTextPhone14"
-        android:layout_width="280dp"
-        android:layout_height="42dp"
+        android:layout_width="276dp"
+        android:layout_height="30dp"
         android:ems="10"
         android:inputType="phone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.152"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="328dp" />
 
     <EditText
         android:id="@+id/editTextPhone10"
-        android:layout_width="293dp"
-        android:layout_height="46dp"
+        android:layout_width="275dp"
+        android:layout_height="25dp"
         android:ems="10"
         android:inputType="phone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.169"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.187"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="115dp"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView29"
-        android:layout_width="144dp"
+        android:layout_width="107dp"
         android:layout_height="29dp"
         android:background="#FFFFFF"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="sans-serif-condensed"
         android:text="@string/pay_firstname"
         android:textColor="#0E0E0E"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398" />
+        app:layout_constraintVertical_bias="0.364" />
 
     <EditText
         android:id="@+id/editTextTextPersonName15"
-        android:layout_width="162dp"
-        android:layout_height="46dp"
+        android:layout_width="158dp"
+        android:layout_height="32dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -91,47 +93,61 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintHorizontal_bias="0.902"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.302" />
+        app:layout_constraintVertical_bias="0.294" />
 
     <TextView
         android:id="@+id/textView23"
-        android:layout_width="90dp"
+        android:layout_width="72dp"
         android:layout_height="32dp"
         android:background="#FFFFFF"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="sans-serif-condensed"
         android:text="@string/pay_ex"
         android:textColor="#0E0E0E"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256" />
+        app:layout_constraintVertical_bias="0.253" />
 
     <TextView
         android:id="@+id/textView50"
-        android:layout_width="99dp"
-        android:layout_height="29dp"
+        android:layout_width="91dp"
+        android:layout_height="28dp"
         android:background="#FFFFFF"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="sans-serif-condensed"
         android:text="@string/pay_lastname"
         android:textColor="#0E0E0E"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintHorizontal_bias="0.693"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388" />
+        app:layout_constraintVertical_bias="0.362" />
+
+    <RadioButton
+        android:id="@+id/radioButton15"
+        android:layout_width="121dp"
+        android:layout_height="27dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/pay_card2"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778" />
 
     <EditText
         android:id="@+id/editTextTextPersonName13"
-        android:layout_width="160dp"
-        android:layout_height="46dp"
+        android:layout_width="158dp"
+        android:layout_height="31dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -140,26 +156,27 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.306" />
+        app:layout_constraintVertical_bias="0.305" />
 
     <EditText
         android:id="@+id/editTextTextPersonName12"
-        android:layout_width="160dp"
-        android:layout_height="45dp"
+        android:layout_width="158dp"
+        android:layout_height="32dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="368dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintVertical_bias="0.341" />
 
     <TextView
         android:id="@+id/textView31"
@@ -169,23 +186,39 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="#FFFFFF"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="sans-serif-condensed"
         android:text="@string/pay_email"
         android:textColor="#0E0E0E"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.588" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="141dp"
+        android:layout_height="27dp"
+        android:background="#FFFFFF"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Card Type"
+        android:textColor="#0E0E0E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.704" />
 
     <TextView
         android:id="@+id/textView28"
         android:layout_width="72dp"
         android:layout_height="30dp"
         android:background="#FFFFFF"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="sans-serif-condensed"
         android:text="@string/pay_cvv"
         android:textColor="#0E0E0E"
         android:textSize="18sp"
@@ -196,10 +229,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.256" />
 
+    <RadioButton
+        android:id="@+id/radioButton13"
+        android:layout_width="84dp"
+        android:layout_height="27dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/pay_card1"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778" />
+
     <EditText
         android:id="@+id/editTextTextPersonName14"
-        android:layout_width="166dp"
-        android:layout_height="52dp"
+        android:layout_width="159dp"
+        android:layout_height="31dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -208,10 +255,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintHorizontal_bias="0.906"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45" />
+        app:layout_constraintVertical_bias="0.408" />
 
     <TextView
         android:id="@+id/textView25"
@@ -221,16 +268,16 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="#FFFFFF"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="sans-serif-condensed"
         android:text="@string/pay_phone"
         android:textColor="#0E0E0E"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.517" />
+        app:layout_constraintVertical_bias="0.475" />
 
     <Button
         android:id="@+id/btnAddClothes"

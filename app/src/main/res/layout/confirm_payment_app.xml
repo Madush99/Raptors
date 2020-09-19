@@ -8,41 +8,41 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="235dp"
-        android:layout_height="29dp"
+        android:layout_width="154dp"
+        android:layout_height="33dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="sans-serif-condensed"
         android:text="Total price:Rs.30000"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.224" />
+        app:layout_constraintVertical_bias="0.221" />
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="219dp"
-        android:layout_height="31dp"
+        android:layout_width="145dp"
+        android:layout_height="30dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:fontFamily="serif-monospace"
+        android:fontFamily="sans-serif-condensed"
         android:text="Payment details:"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.318" />
+        app:layout_constraintVertical_bias="0.321" />
 
     <TextView
         android:id="@+id/textView12"
@@ -52,8 +52,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:fontFamily="serif-monospace"
-        android:text="Name:Vihanga Deshan"
+        android:fontFamily="sans-serif-condensed"
+        android:text="First name:Vihanga"
         android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -63,22 +63,39 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.599" />
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="232dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Last name:Deshan"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688" />
+
     <CheckedTextView
         android:id="@+id/checkedTextView"
         android:layout_width="363dp"
         android:layout_height="111dp"
-        android:fontFamily="serif-monospace"
         android:textSize="18sp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="234dp"
-        tools:text="New 2020 Women Summer Loose T Shirt Casual Short Sleeve Tops Tees Sexy Off Shoulder Print O-Neck Vintage T-Shirt Plus Size S-5XL" />
+        tools:text="Logitech G402 Second Generation Wired Game Mouse RGB Professional Competition For Pc Mouse Gamer For Computer Laptop Accessories" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="80dp"
         android:background="@drawable/btn"
         android:fontFamily="sans-serif-black"
         android:text="Done"
@@ -86,8 +103,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.595" />
 
     <TextView
         android:id="@+id/textView14"
@@ -107,18 +126,17 @@
 
     <CheckedTextView
         android:id="@+id/checkedTextView2"
-        android:layout_width="305dp"
-        android:layout_height="40dp"
+        android:layout_width="177dp"
+        android:layout_height="24dp"
         android:background="#FFFFFF"
-        android:fontFamily="serif-monospace"
         android:text="Thanks for dealing with US!"
         android:textColor="@color/colorAccent"
-        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.732" />
+        app:layout_constraintVertical_bias="0.784" />
 
     <EditText
         android:id="@+id/editTextTime"

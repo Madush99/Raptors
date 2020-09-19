@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".control_panel">
+    android:background="@drawable/my_finder1">
+
     <Button
         android:id="@+id/button4"
         android:layout_width="250dp"
         android:layout_height="49dp"
         android:background="@drawable/btn"
-        android:fontFamily="sans-serif-condensed"
         android:text="Account Details"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,11 +21,10 @@
         app:layout_constraintVertical_bias="0.367" />
 
     <Button
-        android:id="@+id/addDetail"
+        android:id="@+id/button6"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btn"
-        android:fontFamily="sans-serif-condensed"
         android:text="ADD card details"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,11 +35,10 @@
         app:layout_constraintVertical_bias="0.461" />
 
     <Button
-        android:id="@+id/changeDetails"
+        android:id="@+id/button8"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btn"
-        android:fontFamily="sans-serif-condensed"
         android:text="change card details"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,7 +53,6 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btn"
-        android:fontFamily="sans-serif-condensed"
         android:text="change app settings"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,7 +67,6 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:background="@drawable/btn"
-        android:fontFamily="sans-serif-condensed"
         android:text="Log out"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"

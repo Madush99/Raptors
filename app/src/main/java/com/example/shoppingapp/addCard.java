@@ -1,5 +1,6 @@
 package com.example.shoppingapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -135,7 +136,10 @@ public class addCard extends AppCompatActivity {
 
                         if(task.isSuccessful()){
 
+
                             Toast.makeText(getApplicationContext(),"added succesfull",Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(addCard.this,controlPanel.class);
+                            startActivity(intent);
 
                         }
                         else{

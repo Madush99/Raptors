@@ -17,6 +17,7 @@ public class controlPanel extends AppCompatActivity {
         setContentView(R.layout.account_details);
 
         carDetails = (Button)findViewById(R.id.add_card_details);
+        changeDetails = (Button) findViewById(R.id.change_details);
 
         carDetails.setOnClickListener(new View.OnClickListener() {
             @Override

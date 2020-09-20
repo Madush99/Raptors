@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity android:name=".AddClothes"></activity>
+        <activity android:name=".addCard"></activity>
         <activity android:name=".ClothesCategory" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

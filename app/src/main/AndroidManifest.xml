@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.shoppingapp">
 
     <application
@@ -10,28 +9,13 @@
         android:roundIcon="@drawable/logo_size_invert"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".addPayment"></activity>
-        <activity android:name=".edit_deletePayDetails"></activity>
-        <activity android:name=".control_panel">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddClothes">
-
-
-        </activity>
-        <activity android:name=".ClothesCategory"></activity>
-        <activity android:name=".ListActivity"></activity>
-      <activity android:name=".payment_Pay">
-
-
-      </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
     </application>
-.
+
 </manifest>

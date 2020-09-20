@@ -81,13 +81,13 @@
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.068"
+            app:layout_constraintHorizontal_bias="0.076"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.441" />
+            app:layout_constraintVertical_bias="0.529" />
 
         <Button
-            android:id="@+id/btnAddClothes"
+            android:id="@+id/button7"
             android:layout_width="209dp"
             android:layout_height="59dp"
             android:background="@color/colormadush"
@@ -95,10 +95,10 @@
             android:textColor="@color/colordarkgrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.43"
+            app:layout_constraintHorizontal_bias="0.47"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.848" />
+            app:layout_constraintVertical_bias="0.823" />
 
         <TextView
             android:id="@+id/textView19"
@@ -128,45 +128,71 @@
             app:layout_constraintHorizontal_bias="0.086"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.328" />
+            app:layout_constraintVertical_bias="0.424" />
 
         <EditText
-            android:id="@+id/txtName"
+            android:id="@+id/editTextTextPersonName2"
             android:layout_width="355dp"
             android:layout_height="34dp"
+            android:layout_marginStart="24dp"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.361" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="@string/Category"
+            android:textColor="@color/colordarkslategray"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.317" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="355dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="24dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.252" />
 
         <EditText
-            android:id="@+id/txtDesc"
+            android:id="@+id/editTextTextPersonName6"
             android:layout_width="355dp"
             android:layout_height="34dp"
+            android:layout_marginStart="24dp"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.428"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.369" />
+            app:layout_constraintVertical_bias="0.47" />
 
         <EditText
-            android:id="@+id/txtPrice"
+            android:id="@+id/editTextTextPersonName10"
             android:layout_width="355dp"
             android:layout_height="34dp"
             android:ems="10"
             android:inputType="textPersonName"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.428"
+            app:layout_constraintHorizontal_bias="0.482"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.484" />
+            app:layout_constraintVertical_bias="0.576" />
 
         <TextView
             android:id="@+id/textView22"
@@ -181,7 +207,7 @@
             app:layout_constraintHorizontal_bias="0.076"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.544" />
+            app:layout_constraintVertical_bias="0.649" />
 
         <TextView
             android:id="@+id/textView16"
@@ -196,17 +222,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.131" />
-
-        <ImageView
-            android:id="@+id/imgAdd"
-            android:layout_width="339dp"
-            android:layout_height="114dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.333"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.691"
-            app:srcCompat="@drawable/frock1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

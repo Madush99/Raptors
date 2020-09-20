@@ -21,7 +21,7 @@
 
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/add"
         android:layout_width="212dp"
         android:layout_height="35dp"
         android:layout_marginStart="8dp"
@@ -41,7 +41,7 @@
         app:layout_constraintVertical_bias="0.958" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName19"
+        android:id="@+id/fname"
         android:layout_width="178dp"
         android:layout_height="47dp"
         android:layout_marginStart="8dp"
@@ -73,14 +73,18 @@
         app:layout_constraintVertical_bias="0.452" />
 
     <EditText
-        android:id="@+id/editTextPhone6"
+        android:id="@+id/phone"
         android:layout_width="275dp"
         android:layout_height="53dp"
         android:ems="10"
         android:inputType="phone"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="404dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView43"
@@ -118,7 +122,7 @@
         app:layout_constraintVertical_bias="0.293" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName17"
+        android:id="@+id/lname"
         android:layout_width="165dp"
         android:layout_height="52dp"
         android:layout_marginStart="8dp"
@@ -135,21 +139,20 @@
         app:layout_constraintVertical_bias="0.516" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName20"
+        android:id="@+id/cvv"
         android:layout_width="168dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="384dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.907"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        app:layout_constraintVertical_bias="0.341" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
 
     <TextView
         android:id="@+id/textView37"
@@ -187,11 +190,11 @@
         app:layout_constraintVertical_bias="0.596" />
 
     <EditText
-        android:id="@+id/editTextPhone5"
+        android:id="@+id/email"
         android:layout_width="277dp"
         android:layout_height="52dp"
         android:ems="10"
-        android:inputType="phone"
+        android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.141"
@@ -201,7 +204,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName18"
+        android:id="@+id/exp"
         android:layout_width="165dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -209,7 +212,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.056"
@@ -250,11 +253,11 @@
         app:layout_constraintVertical_bias="0.143" />
 
     <EditText
-        android:id="@+id/editTextPhone7"
+        android:id="@+id/number"
         android:layout_width="280dp"
         android:layout_height="53dp"
         android:ems="10"
-        android:inputType="phone"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.155"

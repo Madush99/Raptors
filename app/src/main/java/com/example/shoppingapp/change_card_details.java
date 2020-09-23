@@ -1,5 +1,6 @@
 package com.example.shoppingapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,7 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class change_card_details extends AppCompatActivity {
 
-    TextView number,exp,cvv,fname,lname,phone,email;
+    TextView number,exp,cvv,email;
     DatabaseReference db_reff;
     Button Ret;
 
@@ -44,10 +45,8 @@ public class change_card_details extends AppCompatActivity {
                         cvv.setText(crdcvv);
                         email.setText(crdemail);
                         exp.setText(crdexp);
-                        fname.setText(crdfname);
-                        lname.setText(crdlname);
                         number.setText(crdnum);
-                        phone.setText(crdphone);
+
 
                     }
 
@@ -62,12 +61,34 @@ public class change_card_details extends AppCompatActivity {
         number = (TextView)findViewById(R.id.r_m_number);
         exp = (TextView)findViewById(R.id.r_m_exp);
         cvv = (TextView)findViewById(R.id.r_m_cvv);
-        fname = (TextView)findViewById(R.id.r_m_fname);
-        lname = (TextView)findViewById(R.id.r_m_lname);
-        phone = (TextView)findViewById(R.id.r_m_phone);
         email = (TextView)findViewById(R.id.r_m_email);
-        Ret =(Button)findViewById(R.id.pay_update);
+        Ret =(Button)findViewById(R.id.pay_remove);
 
+
+
+        Ret.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Object cardnum;
+                deleteData();
             }
+        });
+
 
     }
+
+    private void deleteData() {
+
+        DatabaseReference cardDetails = FirebaseDatabase.getInstance().getReference("payment");
+        cardDetails.removeValue();
+
+        Toast.makeText(this, "Card details removed", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(change_card_details.this,addCard.class);
+        startActivity(intent);
+
+    }
+
+
+
+}

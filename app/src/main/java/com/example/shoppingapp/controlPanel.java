@@ -35,11 +35,8 @@ public class controlPanel extends AppCompatActivity {
             }
         });
 
+
+
     }
-
-
-
-
-
 
 }

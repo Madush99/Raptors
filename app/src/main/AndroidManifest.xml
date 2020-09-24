@@ -9,26 +9,22 @@
         android:roundIcon="@drawable/logo_size_invert"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name=".controlPanel">
-
+        <activity android:name=".AdminMenu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".change_card_details">
         </activity>
         <activity android:name=".payment_report"></activity>
         <activity android:name=".AddClothes"></activity>
-        <activity android:name=".addCard">
+        <activity android:name=".addCard"/>
+        <activity android:name=".AdminMaintainActivity"/>
+        <activity android:name=".ClothesCategory" />
+        <activity android:name=".SearchActivity"/>
+        <activity android:name=".ViewClothes"/>
 
-
-
-        </activity>
-        <activity android:name=".ClothesCategory" >
-
-        </activity>
     </application>
 
 </manifest>

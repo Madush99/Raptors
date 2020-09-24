@@ -6,6 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/btnAddClothes"
+        android:layout_width="378dp"
+        android:layout_height="53dp"
+        android:background="@color/colormadush"
+        android:text="Add Clothes"
+        android:textColor="@color/colordarkgrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.377" />
+
     <TextView
         android:id="@+id/textView63"
         android:layout_width="193dp"
@@ -71,35 +85,35 @@
         app:srcCompat="@drawable/me" />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/btnlogout"
         android:layout_width="378dp"
         android:layout_height="53dp"
         android:background="@color/colormadush"
-        android:text="Edit Girls Clothes"
+        android:text="Log Out"
         android:textColor="@color/colordarkgrey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762" />
+        app:layout_constraintVertical_bias="0.742" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/btnMain"
         android:layout_width="378dp"
         android:layout_height="53dp"
         android:background="@color/colormadush"
-        android:text="Add Girls Clothes"
+        android:text="Maintain Clothes"
         android:textColor="@color/colordarkgrey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.478" />
+        app:layout_constraintVertical_bias="0.556" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/btnAcc"
         android:layout_width="378dp"
         android:layout_height="53dp"
         android:background="@color/colormadush"

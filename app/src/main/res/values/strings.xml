@@ -6,6 +6,9 @@
     <string name="dresses_cords"><![CDATA[Dresses & Cords]]></string>
     <string name="pricetag"><![CDATA[Price - ]]></string>
     <string name="dress_model"><![CDATA[Model]]></string>
+
+    //heli
+
     <string name="buy_now1"><![CDATA[Buy Now]]></string>
     <string name="cloth_size"><![CDATA[Size - ]]></string>
     <string name="cloth_qty"><![CDATA[Qty - ]]></string>
@@ -19,9 +22,13 @@
     <string name="total_price">Total Price - </string>
     <string name="Name">Name</string>
     <string name="Category">Category</string>
+
+
     <string name="Description">Description</string>
     <string name="Price">Price</string>
+
     <string name="Pictures">Pictures</string>
+
     //payment
     <string name="pay_number"><![CDATA[Number]]></string>
     <string name="pay_firstname"><![CDATA[First name]]></string>

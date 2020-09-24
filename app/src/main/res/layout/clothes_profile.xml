@@ -258,7 +258,7 @@
         android:layout_height="wrap_content"
         android:text="@string/size_mid"
         android:textColor="@color/colormadush"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.426"

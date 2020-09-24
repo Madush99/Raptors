@@ -1,5 +1,6 @@
 package com.example.shoppingapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -28,7 +29,6 @@ public class addCard extends AppCompatActivity {
     private Button add;
     private EditText Number,Exp,Cvv,Fname, Lname, Phone,Email;
     private DatabaseReference productPAY;
-    private String productRandomKey;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,17 +62,6 @@ public class addCard extends AppCompatActivity {
         crdlname = Lname.getText().toString();
         crdphone = Phone.getText().toString();
         crdemail = Email.getText().toString();
-
-        Calendar calendar = Calendar.getInstance();
-
-        SimpleDateFormat currentDate = new SimpleDateFormat("MMM,dd,yyyy");
-        savedDate = currentDate.format(calendar.getTime());
-
-        SimpleDateFormat currentTime = new SimpleDateFormat("HH:mm:ss a");
-        saveTime = currentTime.format(calendar.getTime());
-
-        productRandomKey = savedDate + saveTime;
-
 
 
         if(TextUtils.isEmpty(crdnumber)){
@@ -116,7 +105,7 @@ public class addCard extends AppCompatActivity {
 
         HashMap<String,Object> addCrad = new HashMap<>();
 
-        addCrad.put("pid",productRandomKey);
+
         addCrad.put("crdNumber",crdnumber);
         addCrad.put("crdExp",crdexp);
         addCrad.put("crdCvv",crdcvv);
@@ -125,17 +114,17 @@ public class addCard extends AppCompatActivity {
         addCrad.put("crdPhone",crdphone);
         addCrad.put("crdEmail",crdemail);
 
-
-
-
-        productPAY.child(productRandomKey).updateChildren(addCrad)
+        FirebaseDatabase.getInstance().getReference().child("payment").updateChildren(addCrad)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
 
                         if(task.isSuccessful()){
 
+
                             Toast.makeText(getApplicationContext(),"added succesfull",Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(addCard.this,controlPanel.class);
+                            startActivity(intent);
 
                         }
                         else{
@@ -145,11 +134,8 @@ public class addCard extends AppCompatActivity {
 
                         }
 
-
                     }
                 });
-
-
 
     }
 }

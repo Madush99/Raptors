@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -30,17 +32,16 @@ public class change_card_details extends AppCompatActivity {
 
 
                 db_reff = FirebaseDatabase.getInstance().getReference().child("payment");
-                db_reff.addListenerForSingleValueEvent(new ValueEventListener() {
+                db_reff.addListenerForSingleValueEvent(new ValueEventListener()
+
+                {
                     @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot){
+                        Toast.makeText(getApplicationContext(),"Data fetching",Toast.LENGTH_SHORT).show();
                         String crdcvv = dataSnapshot.child("crdCvv").getValue().toString();
                         String crdemail = dataSnapshot.child("crdEmail").getValue().toString();
                         String crdexp = dataSnapshot.child("crdExp").getValue().toString();
-                        String crdfname = dataSnapshot.child("crdFname").getValue().toString();
-                        String crdlname = dataSnapshot.child("crdLname").getValue().toString();
                         String crdnum = dataSnapshot.child("crdNumber").getValue().toString();
-                        String crdphone = dataSnapshot.child("crdPhone").getValue().toString();
-
 
                         cvv.setText(crdcvv);
                         email.setText(crdemail);
@@ -56,8 +57,6 @@ public class change_card_details extends AppCompatActivity {
                     }
                 });
 
-                Toast.makeText(getApplicationContext(),"Data fetching",Toast.LENGTH_SHORT).show();
-
         number = (TextView)findViewById(R.id.r_m_number);
         exp = (TextView)findViewById(R.id.r_m_exp);
         cvv = (TextView)findViewById(R.id.r_m_cvv);
@@ -65,30 +64,33 @@ public class change_card_details extends AppCompatActivity {
         Ret =(Button)findViewById(R.id.pay_remove);
 
 
-
         Ret.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Object cardnum;
                 deleteData();
             }
         });
-
 
     }
 
     private void deleteData() {
 
         DatabaseReference cardDetails = FirebaseDatabase.getInstance().getReference("payment");
-        cardDetails.removeValue();
+        cardDetails.removeValue()
+        .addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+            if(task.isSuccessful()) {
+                Toast.makeText(getApplicationContext(), "Data Removed", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(change_card_details.this, addCard.class);
+                startActivity(intent);
+            }else{
 
-        Toast.makeText(this, "Card details removed", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(change_card_details.this,addCard.class);
-        startActivity(intent);
+                Toast.makeText(getApplicationContext(),"Added failed",Toast.LENGTH_SHORT).show();
+            }
 
+            }
+        });
     }
-
-
-
 }

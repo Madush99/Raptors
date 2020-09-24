@@ -127,7 +127,7 @@ public class login extends AppCompatActivity
                                 Toast.makeText(login.this, "Admin Logged in Successfully", Toast.LENGTH_LONG).show();
                                 loadingBar.dismiss();
 
-                                Intent intent = new Intent(login.this, PicassoExample.class);
+                                Intent intent = new Intent(login.this, AdminMenu.class);
                                 startActivity(intent);
                             }
                             else if (parentDbName.equals("Users"))
@@ -135,7 +135,7 @@ public class login extends AppCompatActivity
                                 Toast.makeText(login.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();
 
-                                Intent intent = new Intent(login.this, PicassoExample.class);
+                                Intent intent = new Intent(login.this, ViewClothes.class);
                                 startActivity(intent);
                             }
 

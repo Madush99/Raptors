@@ -12,17 +12,17 @@
         <activity android:name=".AddClothes"></activity>
         <activity android:name=".ViewClothes"/>
         <activity android:name=".AdminMaintainActivity"/>
-        <activity android:name=".AdminMenu">
-
+        <activity android:name=".startup">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".ClothesCategory" >
-
-        </activity>
+        <activity android:name=".ClothesCategory" />
+        <activity android:name=".signup"/>
+        <activity android:name=".login"/>
+        <activity android:name=".PicassoExample"/>
+        <activity android:name=".AdminMenu"/>
     </application>
 
 </manifest>

@@ -114,7 +114,7 @@ public class addCard extends AppCompatActivity {
         addCrad.put("crdPhone",crdphone);
         addCrad.put("crdEmail",crdemail);
 
-        FirebaseDatabase.getInstance().getReference().child("payment").updateChildren(addCrad)
+        FirebaseDatabase.getInstance().getReference().child("payment").child(crdphone).updateChildren(addCrad)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {

@@ -17,16 +17,14 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".change_card_details">
-        </activity>
+        <activity android:name=".change_card_details"></activity>
         <activity android:name=".payment_report"></activity>
         <activity android:name=".AddClothes"></activity>
-        <activity android:name=".addCard">
+        <activity android:name=".addCard"></activity>
+        <activity android:name=".ClothesCategory" ></activity>
+        <activity android:name=".payment">
 
 
-
-        </activity>
-        <activity android:name=".ClothesCategory" >
 
         </activity>
     </application>

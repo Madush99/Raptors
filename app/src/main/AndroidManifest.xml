@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.shoppingapp" >
+    package="com.example.shoppingapp">
 
     <application
         android:allowBackup="true"
@@ -8,21 +8,22 @@
         android:label="WTF_Helinsa"
         android:roundIcon="@drawable/logo_size_invert"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-        <activity android:name=".AddClothes"></activity>
-        <activity android:name=".ViewClothes"/>
-        <activity android:name=".AdminMaintainActivity"/>
+        android:theme="@style/AppTheme">
+        <activity android:name=".AddClothes" />
+        <activity android:name=".ViewClothes" />
+        <activity android:name=".AdminMaintainActivity" />
         <activity android:name=".startup">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".ClothesCategory" />
-        <activity android:name=".signup"/>
-        <activity android:name=".login"/>
-        <activity android:name=".PicassoExample"/>
-        <activity android:name=".AdminMenu"/>
+        <activity android:name=".signup" />
+        <activity android:name=".login" />
+        <activity android:name=".PicassoExample" />
+        <activity android:name=".AdminMenu" />
     </application>
 
 </manifest>

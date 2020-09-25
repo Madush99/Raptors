@@ -34,11 +34,7 @@ public class ViewClothes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_view);
 
-        Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
-        if (bundle != null){
-            type = getIntent().getExtras().get("Admin").toString();
-        }
+       Intent intent = getIntent();
 
         ClothesRef = FirebaseDatabase.getInstance().getReference().child("Products");
 
@@ -66,12 +62,12 @@ public class ViewClothes extends AppCompatActivity {
 
                         holder.txtClothesName.setText(model.getName());
                         holder.txtClothesDesc.setText(model.getDescription());
-                        holder.txtClothesPrice.setText("Price: Rs."+model.getPrice());
+                        holder.txtClothesPrice.setText("Price: Rs."+ model.getPrice());
                         Picasso.get().load(model.getImage()).into(holder.ClothImag);
 
                         holder.itemView.setOnClickListener(new View.OnClickListener() {
                             @Override
-                            public void onClick(View v) {
+                            public void onClick(View view) {
                                 Intent intent = new Intent(ViewClothes.this, AdminMaintainActivity.class);
                                 intent.putExtra("pid", model.getPid());
                                 startActivity(intent);

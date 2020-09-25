@@ -32,7 +32,7 @@ public class ClothesView extends RecyclerView.ViewHolder implements View.OnClick
     }
 
     @Override
-    public void onClick(View v) {
-        listner.onClick(v,getAdapterPosition(), false);
+    public void onClick(View view) {
+        listner.onClick(view,getAdapterPosition(), false);
     }
 }

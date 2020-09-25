@@ -23,6 +23,7 @@
         <activity android:name=".login"/>
         <activity android:name=".PicassoExample"/>
         <activity android:name=".AdminMenu"/>
+        <activity android:name=".SearchActivity"/>
     </application>
 
 </manifest>

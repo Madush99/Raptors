@@ -68,6 +68,7 @@ public class ViewClothes extends AppCompatActivity {
                         holder.itemView.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
+
                                 Intent intent = new Intent(ViewClothes.this, AdminMaintainActivity.class);
                                 intent.putExtra("pid", model.getPid());
                                 startActivity(intent);

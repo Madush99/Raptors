@@ -15,27 +15,26 @@
         android:layout_height="match_parent">
 
 
-
         <ImageView
             android:id="@+id/proImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_below="@+id/productName"
-            android:scaleType="centerCrop"
             android:layout_marginTop="2dp"
 
             />
+
         <EditText
             android:id="@+id/proName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/proImage"
+            android:layout_margin="5dp"
             android:layout_marginTop="0dp"
             android:hint="Product Name"
             android:padding="12dp"
-            android:layout_margin="5dp"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colordarkslategray"
             android:textSize="16dp" />
 
         <EditText
@@ -43,12 +42,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/proName"
+            android:layout_margin="5dp"
             android:layout_marginTop="0dp"
             android:hint="Product Description"
             android:padding="12dp"
-            android:layout_margin="5dp"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colordarkslategray"
             android:textSize="16dp" />
 
         <EditText
@@ -56,43 +55,44 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/proDesc"
-            android:hint="Product price"
-            android:textAlignment="center"
-            android:textSize="18dp"
-            android:padding="12dp"
             android:layout_margin="5dp"
             android:layout_marginTop="2dp"
-            android:textColor="@color/colorPrimary"
-            />
+            android:hint="Product price"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/colordarkslategray"
+            android:textSize="18dp" />
+
         <Button
             android:id="@+id/btnApply"
-            android:layout_width="match_parent"
+            android:layout_width="376dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/proPrice"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttons1"
             android:hint="Apply Changes"
-            android:textAlignment="center"
-            android:textSize="18dp"
             android:padding="12dp"
-            android:layout_margin="5dp"
-            android:layout_marginTop="2dp"
-            android:background="@color/colorPrimary"
-            android:textColor="#ffffff"
-            />
+            android:textAlignment="center"
+            android:textColorHint="#ffff"
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btnDelete"
-            android:layout_width="match_parent"
+            android:layout_width="371dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/btnApply"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/buttons1"
             android:hint="Delete Item"
-            android:textAlignment="center"
-            android:textSize="18dp"
             android:padding="12dp"
-            android:layout_margin="5dp"
-            android:layout_marginTop="2dp"
-            android:background="@color/colorPrimary"
-            android:textColor="#ffffff"
-            />
+            android:textAlignment="center"
+            android:textColorHint="#ffff"
+            android:textSize="18dp" />
 
     </RelativeLayout>
 

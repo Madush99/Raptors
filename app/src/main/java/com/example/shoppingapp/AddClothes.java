@@ -98,7 +98,7 @@ public class AddClothes extends AppCompatActivity  {
         productName = name.getText().toString();
 
         if(ImageUri == null){
-            Toast.makeText(this,"Product Image mandotory....", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Product Image Mandatory....", Toast.LENGTH_SHORT).show();
         }
         else if(TextUtils.isEmpty(Description)){
 
@@ -202,7 +202,7 @@ public class AddClothes extends AppCompatActivity  {
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()){
 
-                            Intent intent = new Intent(AddClothes.this, ClothesCategory.class);
+                            Intent intent = new Intent(AddClothes.this, AdminMenu.class);
                             startActivity(intent);
 
                             loadingBar.dismiss();

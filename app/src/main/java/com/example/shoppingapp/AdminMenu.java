@@ -23,6 +23,7 @@ public class AdminMenu extends AppCompatActivity {
         maintainClothes= (Button)findViewById(R.id.btnMain);
         logout = (Button)findViewById(R.id.btnlogout);
 
+
         addClothes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,8 +39,18 @@ public class AdminMenu extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(AdminMenu.this, AdminClothesView.class);
                 startActivity(intent);
-                Toast toast = Toast.makeText(AdminMenu.this, "You Choose Maintain Clothes", Toast.LENGTH_SHORT);
-                toast.show();
+                Toast.makeText(AdminMenu.this, "You Choose Maintain Clothes", Toast.LENGTH_SHORT).show();
+
+
+            }
+        });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminMenu.this,login.class);
+                startActivity(intent);
+                Toast.makeText(AdminMenu.this, "Logged Out Successfully", Toast.LENGTH_SHORT).show();
 
             }
         });

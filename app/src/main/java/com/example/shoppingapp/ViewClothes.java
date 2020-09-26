@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,6 +26,8 @@ public class ViewClothes extends AppCompatActivity {
     private RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
 
+    ImageView home1,me1,bag1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +41,27 @@ public class ViewClothes extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(layoutManager);
+
+        home1 = (ImageView) findViewById(R.id.shop1);
+        me1 = (ImageView) findViewById(R.id.me1);
+
+        home1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ViewClothes.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        me1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ViewClothes.this,controlPanel.class);
+                startActivity(intent);
+            }
+        });
+
+
 
     }
 

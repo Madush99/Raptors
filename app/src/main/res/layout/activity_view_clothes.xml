@@ -21,7 +21,7 @@
             android:textAlignment="center"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colordarkslategray"
             />
 
         <ImageView
@@ -29,7 +29,6 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_below="@+id/productName"
-            
             android:layout_marginTop="2dp"
 
             />
@@ -42,7 +41,7 @@
             android:layout_marginTop="0dp"
             android:text="Product Description"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colordarkslategray"
             android:textSize="16dp" />
 
         <TextView
@@ -54,7 +53,7 @@
             android:textAlignment="center"
             android:textSize="18dp"
             android:layout_marginTop="2dp"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colordarkslategray"
             />
 
     </RelativeLayout>

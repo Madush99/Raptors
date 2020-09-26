@@ -1,5 +1,6 @@
 package com.example.shoppingapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -63,12 +64,22 @@ public class SearchActivity extends AppCompatActivity {
         FirebaseRecyclerAdapter<Clothes, ClothesView> adapter =
                 new FirebaseRecyclerAdapter<Clothes, ClothesView>(options) {
                     @Override
-                    protected void onBindViewHolder(@NonNull ClothesView holder, int position, @NonNull Clothes model) {
+                    protected void onBindViewHolder(@NonNull ClothesView holder, int position, @NonNull final Clothes model) {
 
                         holder.txtClothesName.setText(model.getName());
                         holder.txtClothesDesc.setText(model.getDescription());
                         holder.txtClothesPrice.setText("Price: Rs."+model.getPrice());
                         Picasso.get().load(model.getImage()).into(holder.ClothImag);
+
+                        holder.itemView.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view)
+                            {
+                                Intent intent = new Intent(SearchActivity.this, clothes_profile.class);
+                                intent.putExtra("pid", model.getPid());
+                                startActivity(intent);
+                            }
+                        });
                     }
 
                     @NonNull

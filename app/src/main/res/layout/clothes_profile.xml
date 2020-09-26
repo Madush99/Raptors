@@ -4,8 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    tools:context=".clothes_profile">
 
     <ImageView
         android:id="@+id/product_image_details"
@@ -25,7 +25,7 @@
         android:gravity="center"
         android:layout_marginTop="10dp"
 
-    />
+        />
 
     <TextView
         android:id="@+id/product_description_details"
@@ -54,49 +54,33 @@
 
         />
 
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="117dp"
-        android:layout_marginBottom="166dp"
-        android:background="@drawable/ic_add" />
-
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="117dp"
-        android:layout_marginBottom="163dp"
-        android:background="@drawable/ic_remove"
-        android:paddingStart="60dp" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/number_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/product_price_details"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="170dp"
-        android:text="5"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        android:layout_margin="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"
+        app:backGroundColor="@color/colormadush"
+        app:backgroundDrawable="@drawable/buttons1"
+
+        android:elevation="6dp"
+        app:finalNumber="10"
+        app:initialNumber="1"
+        app:textSize="13sp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_product_to_cart_btn"
+        android:elevation="6dp"
+        android:backgroundTint="@color/colorheliwhite"
+        android:src="@drawable/nav_cart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorheliwhite"
-        android:elevation="6dp"
-        android:src="@drawable/nav_cart"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_margin="15dp"/>
-
-
 
 
 </RelativeLayout>

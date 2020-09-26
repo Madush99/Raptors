@@ -9,7 +9,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    Button b1,b2,b3,b4,b5;
+    Button b1,b2,b3,b4,b5,Search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +21,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b3 = (Button) findViewById(R.id.DenimBtn);
         b4 = (Button) findViewById(R.id.DressBtn);
         b5 = (Button) findViewById(R.id.ShortsBtn);
+        Search = (Button) findViewById(R.id.btnSearchN);
 
         b1.setOnClickListener(this);
         b2.setOnClickListener(this);
         b3.setOnClickListener(this);
         b4.setOnClickListener(this);
         b5.setOnClickListener(this);
+
+        Search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 
     @Override

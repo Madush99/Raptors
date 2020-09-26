@@ -36,7 +36,7 @@ public class AdminMenu extends AppCompatActivity {
         maintainClothes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminMenu.this, ViewClothes.class);
+                Intent intent = new Intent(AdminMenu.this, AdminClothesView.class);
                 startActivity(intent);
                 Toast toast = Toast.makeText(AdminMenu.this, "You Choose Maintain Clothes", Toast.LENGTH_SHORT);
                 toast.show();

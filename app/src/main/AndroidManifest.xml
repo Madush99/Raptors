@@ -21,9 +21,10 @@
         <activity android:name=".ClothesCategory" />
         <activity android:name=".signup"/>
         <activity android:name=".login"/>
-        <activity android:name=".PicassoExample"/>
         <activity android:name=".AdminMenu"/>
         <activity android:name=".SearchActivity"/>
+        <activity android:name=".clothes_profile"/>
+        <activity android:name=".PicassoExample"/>
     </application>
 
 </manifest>

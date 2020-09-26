@@ -34,7 +34,13 @@ public class ViewClothes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_view);
 
-       Intent intent = getIntent();
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        if (bundle != null)
+        {
+            type = getIntent().getExtras().get("Admin").toString();
+        }
+
 
         ClothesRef = FirebaseDatabase.getInstance().getReference().child("Products");
 
@@ -65,13 +71,25 @@ public class ViewClothes extends AppCompatActivity {
                         holder.txtClothesPrice.setText("Price: Rs."+ model.getPrice());
                         Picasso.get().load(model.getImage()).into(holder.ClothImag);
 
+
                         holder.itemView.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
 
-                                Intent intent = new Intent(ViewClothes.this, AdminMaintainActivity.class);
-                                intent.putExtra("pid", model.getPid());
-                                startActivity(intent);
+                                if (type.equals("Admin")){
+                                    Intent intent = new Intent(ViewClothes.this, AdminMaintainActivity.class);
+                                    intent.putExtra("pid", model.getPid());
+                                    startActivity(intent);
+                                }
+                                else{
+                                    Intent intent = new Intent(ViewClothes.this, clothes_profile.class);
+                                    intent.putExtra("pid", model.getPid());
+                                    startActivity(intent);
+                                }
+
+//                                Intent intent = new Intent(ViewClothes.this, AdminMaintainActivity.class);
+//                                intent.putExtra("pid", model.getPid());
+//                                startActivity(intent);
                             }
                         });
                     }

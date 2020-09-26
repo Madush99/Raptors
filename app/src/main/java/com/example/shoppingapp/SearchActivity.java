@@ -82,6 +82,7 @@ public class SearchActivity extends AppCompatActivity {
                         });
                     }
 
+
                     @NonNull
                     @Override
                     public ClothesView onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

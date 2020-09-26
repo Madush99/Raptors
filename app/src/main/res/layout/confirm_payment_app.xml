@@ -93,7 +93,7 @@
         tools:text="Logitech G402 Second Generation Wired Game Mouse RGB Professional Competition For Pc Mouse Gamer For Computer Laptop Accessories" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/TShirtsBtn"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:background="@drawable/btn"

@@ -11,7 +11,7 @@
         android:id="@+id/product_image_details"
         android:layout_width="match_parent"
         android:layout_height="260dp"
-        android:scaleType="centerCrop"/>
+        />
 
     <TextView
         android:id="@+id/product_name_details"
@@ -70,6 +70,7 @@
         app:finalNumber="10"
         app:initialNumber="1"
         app:textSize="13sp" />
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_product_to_cart_btn"

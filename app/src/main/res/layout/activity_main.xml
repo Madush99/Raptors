@@ -110,7 +110,7 @@
             app:layout_constraintVertical_bias="0.525" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/TopsBtn"
             android:layout_width="184dp"
             android:layout_height="44dp"
             android:background="@color/colormadush"
@@ -124,7 +124,7 @@
             app:layout_constraintVertical_bias="0.627" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/TShirtsBtn"
             android:layout_width="189dp"
             android:layout_height="42dp"
             android:background="@color/colormadush"
@@ -139,7 +139,7 @@
 
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/ShortsBtn"
             android:layout_width="189dp"
             android:layout_height="42dp"
             android:background="@color/colormadush"
@@ -150,10 +150,10 @@
             app:layout_constraintHorizontal_bias="0.936"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.718" />
+            app:layout_constraintVertical_bias="0.716" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/DenimBtn"
             android:layout_width="184dp"
             android:layout_height="44dp"
             android:background="@color/colormadush"
@@ -167,7 +167,7 @@
             app:layout_constraintVertical_bias="0.717" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/DressBtn"
             android:layout_width="378dp"
             android:layout_height="53dp"
             android:background="@color/colormadush"

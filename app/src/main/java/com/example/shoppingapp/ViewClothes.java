@@ -25,21 +25,11 @@ public class ViewClothes extends AppCompatActivity {
     private RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
 
-    private String type = "";
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_view);
-
-        Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
-        if (bundle != null)
-        {
-            type = getIntent().getExtras().get("Admin").toString();
-        }
 
 
         ClothesRef = FirebaseDatabase.getInstance().getReference().child("Products");
@@ -49,17 +39,18 @@ public class ViewClothes extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(layoutManager);
 
-
     }
 
     @Override
     protected void onStart() {
+
+        final String cat = getIntent().getStringExtra("Category");
         super.onStart();
 
         FirebaseRecyclerOptions<Clothes> options =
-                new FirebaseRecyclerOptions.Builder<Clothes>()
-                .setQuery(ClothesRef, Clothes.class)
-                .build();
+              new FirebaseRecyclerOptions.Builder<Clothes>()
+                      .setQuery(ClothesRef.orderByChild("category").equalTo(cat), Clothes.class)
+                      .build();
 
         FirebaseRecyclerAdapter<Clothes, ClothesView> adapter =
                 new FirebaseRecyclerAdapter<Clothes, ClothesView>(options) {
@@ -76,20 +67,10 @@ public class ViewClothes extends AppCompatActivity {
                             @Override
                             public void onClick(View view) {
 
-                                if (type.equals("Admin")){
-                                    Intent intent = new Intent(ViewClothes.this, AdminMaintainActivity.class);
-                                    intent.putExtra("pid", model.getPid());
-                                    startActivity(intent);
-                                }
-                                else{
                                     Intent intent = new Intent(ViewClothes.this, clothes_profile.class);
                                     intent.putExtra("pid", model.getPid());
                                     startActivity(intent);
-                                }
 
-//                                Intent intent = new Intent(ViewClothes.this, AdminMaintainActivity.class);
-//                                intent.putExtra("pid", model.getPid());
-//                                startActivity(intent);
                             }
                         });
                     }

@@ -30,6 +30,7 @@
         <activity android:name=".PicassoExample" />
         <activity android:name=".MainActivity" />
 
+
     </application>
 
 </manifest>

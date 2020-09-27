@@ -1,6 +1,7 @@
 package com.example.shoppingapp;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -50,6 +51,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+        ImageView imageAnim = findViewById(R.id.imageAnim1);
+        AnimationDrawable animationDrawable = (AnimationDrawable)imageAnim.getDrawable();
+        animationDrawable.start();
+
+        ImageView imageAnim2 = findViewById(R.id.imageAnim2);
+        AnimationDrawable animationDrawable2 = (AnimationDrawable)imageAnim2.getDrawable();
+        animationDrawable2.start();
 
 
     }

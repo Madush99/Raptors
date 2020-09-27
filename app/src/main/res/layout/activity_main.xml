@@ -2,11 +2,28 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnSearchView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
 
+        <Button
+            android:id="@+id/btnSearchN"
+            android:layout_width="217dp"
+            android:layout_height="57dp"
+            android:background="@drawable/buttons1"
+            android:padding="20dp"
+            android:text="Find Clothes Here"
+            android:textAllCaps="true"
+            android:textColor="@color/colorheliwhite"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.003" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -20,32 +37,18 @@
             app:layout_constraintVertical_bias="0.949"
             app:srcCompat="@drawable/category" />
 
-        <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="268dp"
-            android:layout_height="48dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
-
-
-        </SearchView>
-
         <TextView
             android:id="@+id/textView"
-            android:layout_width="111dp"
-            android:layout_height="47dp"
+            android:layout_width="91dp"
+            android:layout_height="54dp"
             android:fontFamily="cursive"
             android:text="Helinsa "
             android:textColor="@color/colormadush"
             android:textSize="100px"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/searchView"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -64,11 +67,11 @@
             android:id="@+id/imageView2"
             android:layout_width="208dp"
             android:layout_height="218dp"
-            android:layout_marginStart="240dp"
+            android:layout_marginStart="248dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.213"
+            app:layout_constraintVertical_bias="0.208"
             app:srcCompat="@drawable/register" />
 
         <ImageView
@@ -110,7 +113,7 @@
             app:layout_constraintVertical_bias="0.525" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/TopsBtn"
             android:layout_width="184dp"
             android:layout_height="44dp"
             android:background="@color/colormadush"
@@ -124,7 +127,7 @@
             app:layout_constraintVertical_bias="0.627" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/TShirtsBtn"
             android:layout_width="189dp"
             android:layout_height="42dp"
             android:background="@color/colormadush"
@@ -139,7 +142,7 @@
 
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/ShortsBtn"
             android:layout_width="189dp"
             android:layout_height="42dp"
             android:background="@color/colormadush"
@@ -150,10 +153,10 @@
             app:layout_constraintHorizontal_bias="0.936"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.718" />
+            app:layout_constraintVertical_bias="0.716" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/DenimBtn"
             android:layout_width="184dp"
             android:layout_height="44dp"
             android:background="@color/colormadush"
@@ -167,7 +170,7 @@
             app:layout_constraintVertical_bias="0.717" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/DressBtn"
             android:layout_width="378dp"
             android:layout_height="53dp"
             android:background="@color/colormadush"
@@ -181,7 +184,7 @@
             app:layout_constraintVertical_bias="0.817" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/homeImg"
             android:layout_width="47dp"
             android:layout_height="37dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -190,10 +193,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.943"
-            app:srcCompat="@drawable/jn" />
+            app:srcCompat="@drawable/jn"/>
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/BagImg"
             android:layout_width="61dp"
             android:layout_height="41dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -205,7 +208,7 @@
             app:srcCompat="@drawable/bag" />
 
         <ImageView
-            android:id="@+id/imageView7"
+            android:id="@+id/MeImg"
             android:layout_width="48dp"
             android:layout_height="43dp"
             app:layout_constraintBottom_toBottomOf="parent"

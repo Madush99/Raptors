@@ -1,116 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="184dp"
-        android:layout_height="44dp"
-        android:background="@color/colormadush"
-        android:text="LOG IN"
-        android:textColor="@color/colordarkgrey"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676" />
-
+    
     <TextView
-        android:id="@+id/textView44"
-        android:layout_width="131dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="132dp"
+        android:id="@+id/login_shoplogo"
+        android:layout_width="300dp"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="20dp"
         android:fontFamily="cursive"
-        android:text="Helinsa "
+        android:text="Helinsa"
         android:textColor="@color/colormadush"
-        android:textSize="150px"
+        android:textSize="100sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/searchView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.052" />
-
-    <TextView
-        android:id="@+id/textView67"
-        android:layout_width="68dp"
-        android:layout_height="26dp"
-        android:text="LOG IN"
-        android:textColor="@color/colordarkslategray"
-        android:textSize="60px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.194" />
-
-    <TextView
-        android:id="@+id/textView75"
-        android:layout_width="68dp"
-        android:layout_height="26dp"
-        android:text="SIGN UP"
-        android:textSize="60px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.851"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.194" />
-
-    <TextView
-        android:id="@+id/textView76"
-        android:layout_width="wrap_content"
+    
+    
+    <EditText
+        android:id="@+id/login_phonenumber_input"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="EMAIL ADDRESS"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.179"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32" />
+        android:layout_below="@+id/login_shoplogo"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textColor="@color/colormadush"
+        android:textColorHint="@color/colordarkgrey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
 
-    <TextView
-        android:id="@+id/textView77"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PASSWORD"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.162"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.454" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="332dp"
-        android:layout_height="37dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.696"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361" />
+        android:id="@+id/login_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_phonenumber_input"
+        android:background="@drawable/input_design"
+        android:padding="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:inputType="text"
+        android:textColor="@color/colormadush"
+        android:textColorHint="@color/colordarkgrey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="332dp"
-        android:layout_height="38dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.696"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/login_password_input"
+        android:layout_marginTop="10dp"
+        >
+        <CheckBox
+            android:id="@+id/remember_me_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember Me"
+            android:textColor="@color/colormadush"
+            android:buttonTint="@color/colormadush"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="17dp"
+            />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/forgot_password_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="83dp"
+
+        />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_1"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/buttons1"
+        android:padding="20dp"
+        android:textAllCaps="true"
+        android:textSize="28sp"
+        android:text="Login"
+        android:textColor="@color/colorheliwhite"
+        />
+
+    <TextView
+        android:id="@+id/admin_panel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="37dp"
+        android:text="I am an Admin"
+        android:textColor="@color/colormadush"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/not_admin_panel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="23dp"
+        android:text="I am not an Admin"
+        android:textColor="@color/colormadush"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

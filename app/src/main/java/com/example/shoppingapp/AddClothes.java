@@ -98,7 +98,7 @@ public class AddClothes extends AppCompatActivity  {
         productName = name.getText().toString();
 
         if(ImageUri == null){
-            Toast.makeText(this,"Product Image mandotory....", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Product Image Mandatory....", Toast.LENGTH_SHORT).show();
         }
         else if(TextUtils.isEmpty(Description)){
 
@@ -116,6 +116,7 @@ public class AddClothes extends AppCompatActivity  {
 
         }
         else{
+
             storeProductInformation();
         }
 
@@ -142,23 +143,25 @@ public class AddClothes extends AppCompatActivity  {
 
         final UploadTask uploadTask = filepath.putFile(ImageUri);
 
+
         uploadTask.addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 String message = e.toString();
                 Toast.makeText(AddClothes.this, "Error: " + message,Toast.LENGTH_SHORT).show();
+                loadingBar.dismiss();
             }
         }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                 Toast.makeText(AddClothes.this, "Images Uploaded Sucessfully...." ,Toast.LENGTH_SHORT).show();
 
-                Task<Uri> uriTask = uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
+                Task<Uri> urlTask = uploadTask.continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                     @Override
                     public Task<Uri> then(@NonNull Task<UploadTask.TaskSnapshot> task) throws Exception {
 
                         if (!task.isSuccessful()){
-                            downloadImageUrl = task.getResult().toString();
+
                             throw task.getException();
                         }
 
@@ -169,6 +172,7 @@ public class AddClothes extends AppCompatActivity  {
                     @Override
                     public void onComplete(@NonNull Task<Uri> task) {
                         if (task.isSuccessful()){
+                            downloadImageUrl = task.getResult().toString();
                             Toast.makeText(AddClothes.this, "getting Product Image save to database Sucessfully", Toast.LENGTH_SHORT).show();
 
                             SaveProductInfoToDatabase();
@@ -198,7 +202,7 @@ public class AddClothes extends AppCompatActivity  {
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()){
 
-                            Intent intent = new Intent(AddClothes.this, ClothesCategory.class);
+                            Intent intent = new Intent(AddClothes.this, AdminMenu.class);
                             startActivity(intent);
 
                             loadingBar.dismiss();

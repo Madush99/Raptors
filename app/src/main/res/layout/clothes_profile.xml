@@ -78,7 +78,7 @@
         android:id="@+id/pd_add_to_cart_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colormadush"
+        android:background="@drawable/buttons1"
         android:layout_margin="15dp"
         android:layout_alignParentBottom="true"
         android:text="Add to bag"

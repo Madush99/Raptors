@@ -11,14 +11,15 @@
         <Button
             android:id="@+id/btnSearchN"
             android:layout_width="217dp"
-            android:layout_height="57dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="276dp"
             android:background="@drawable/buttons1"
             android:padding="20dp"
             android:text="Find Clothes Here"
             android:textAllCaps="true"
             android:textColor="@color/colorheliwhite"
             android:textSize="11dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/textView"
             app:layout_constraintHorizontal_bias="0.031"
             app:layout_constraintStart_toStartOf="parent"
@@ -194,7 +195,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.943"
-            app:srcCompat="@drawable/jn"/>
+            app:srcCompat="@drawable/jn" />
 
         <ImageView
             android:id="@+id/BagImg"

@@ -1,6 +1,7 @@
 package com.example.shoppingapp;
 
 import android.content.Intent;
+import android.graphics.ColorSpace;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
@@ -96,14 +97,14 @@ public class clothes_profile  extends AppCompatActivity
             @Override
             public void onComplete(@NonNull Task<Void> task)
             {
-//                if (task.isSuccessful())
-//                {
-//                    cartListRef.child("Admin View").child(Prevalent.currentOnlineUser.getPhone())
-//                            .child("Products").child(productID).updateChildren(cartMap)
-//                            .addOnCompleteListener(new OnCompleteListener<Void>() {
-//                                @Override
-//                                public void onComplete(@NonNull Task<Void> task)
-//                                {
+               if (task.isSuccessful())
+               {
+                  cartListRef.child("Admin View").child(Prevalent.currentOnlineUser.getPhone())
+                           .child("Products").child(productID).updateChildren(cartMap)
+                          .addOnCompleteListener(new OnCompleteListener<Void>() {
+                               @Override
+                             public void onComplete(@NonNull Task<Void> task)
+                               {
 
                                     if (task.isSuccessful())
                                     {
@@ -112,11 +113,11 @@ public class clothes_profile  extends AppCompatActivity
                                         startActivity(intent);
 
                                     }
-//                                }
-//                            });
-//
-//
-//                }
+                                }
+                            });
+
+
+                }
 
             }
         });

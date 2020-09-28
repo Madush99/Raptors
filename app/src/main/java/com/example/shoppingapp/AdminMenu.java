@@ -9,6 +9,8 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import io.paperdb.Paper;
+
 public class AdminMenu extends AppCompatActivity {
 
     private Button accD, addClothes, maintainClothes, logout;
@@ -48,6 +50,7 @@ public class AdminMenu extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Paper.book().destroy();
                 Intent intent = new Intent(AdminMenu.this,login.class);
                 startActivity(intent);
                 Toast.makeText(AdminMenu.this, "Logged Out Successfully", Toast.LENGTH_SHORT).show();

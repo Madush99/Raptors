@@ -29,6 +29,7 @@
         <activity android:name=".clothes_profile" />
         <activity android:name=".PicassoExample" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".clothes_cart"/>
 
 
     </application>

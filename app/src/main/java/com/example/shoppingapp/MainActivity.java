@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button b1,b2,b3,b4,b5,Search;
-    ImageView home,me,bag;
+    ImageView home,me,Bag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Search = (Button) findViewById(R.id.btnSearchN);
         home = (ImageView) findViewById(R.id.homeImg);
         me = (ImageView) findViewById(R.id.MeImg);
+        Bag = (ImageView) findViewById(R.id.BagImg);
 
 
         b1.setOnClickListener(this);
@@ -50,6 +51,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             }
         });
+
+        Bag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,clothes_cart.class);
+                startActivity(i);
+            }
+        });
+
+
 
         ImageView imageAnim = findViewById(R.id.imageAnim1);
         AnimationDrawable animationDrawable = (AnimationDrawable)imageAnim.getDrawable();

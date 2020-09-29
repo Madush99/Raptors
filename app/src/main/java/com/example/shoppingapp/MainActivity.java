@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Bag.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,clothes_cart.class);
-                startActivity(i);
+                Intent intent = new Intent(MainActivity.this,clothes_cart.class);
+                startActivity(intent);
             }
         });
 

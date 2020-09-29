@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.shoppingapp.Model.Cart;
+import com.example.shoppingapp.Model.Users;
 import com.example.shoppingapp.Prevalent.Prevalent;
 import com.example.shoppingapp.ViewContent.CartViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -50,8 +51,9 @@ public class clothes_cart extends AppCompatActivity
 
         final DatabaseReference cartListRef = FirebaseDatabase.getInstance().getReference().child("Cart List");
 
-        FirebaseRecyclerOptions<Cart> options = new FirebaseRecyclerOptions.Builder<Cart>().setQuery(cartListRef.child("User View")
-                .child(Prevalent.currentOnlineUser.getPhone()).child("Products"),Cart.class)
+        FirebaseRecyclerOptions<Cart> options = new FirebaseRecyclerOptions.Builder<Cart>()
+                .setQuery(cartListRef.child("User View")
+                .child(Prevalent.currentOnlineUser.getPhone()).child("Products"), Cart.class)
                 .build();
 
         FirebaseRecyclerAdapter<Cart, CartViewHolder> adapter = new FirebaseRecyclerAdapter<Cart, CartViewHolder>(options) {
@@ -74,6 +76,7 @@ public class clothes_cart extends AppCompatActivity
             }
         };
 
-
+        recyclerView.setAdapter(adapter);
+        adapter.startListening();
     }
 }

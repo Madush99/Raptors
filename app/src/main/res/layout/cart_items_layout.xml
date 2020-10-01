@@ -10,7 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="10dp"
-        android:background="@color/colormadush">
+
+
+        android:radius="15dp"
+
+        android:background="@drawable/buttons1">
+
 
         <TextView
             android:id="@+id/cart_product_name"
@@ -18,7 +23,7 @@
             android:layout_height="wrap_content"
             android:text="Product Name"
             android:textColor="@color/colorheliwhite"
-            android:textSize="15sp"
+            android:textSize="17sp"
             android:layout_marginLeft="5dp"/>
 
         <TextView
@@ -30,7 +35,7 @@
             android:text="Product Quantity"
             android:textAlignment="viewEnd"
             android:textColor="@color/colorheliwhite"
-            android:textSize="15sp" />
+            android:textSize="17sp" />
 
         <TextView
             android:id="@+id/cart_product_price"
@@ -39,7 +44,7 @@
             android:layout_below="@+id/cart_product_name"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="12dp"
-            android:gravity="center"
+            android:gravity="left"
             android:text="Product Price"
             android:textColor="@color/colorheliwhite"
             android:textSize="20sp" />

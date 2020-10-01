@@ -34,6 +34,8 @@ public class clothes_cart extends AppCompatActivity
     private Button cartBuyButton;
     private TextView txtTotalAmount;
 
+    private int overTotalPrice = 0;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +48,18 @@ public class clothes_cart extends AppCompatActivity
 
         cartBuyButton = (Button) findViewById(R.id.cart_buy_btn);
         txtTotalAmount = (TextView) findViewById(R.id.total_price);
+
+        cartBuyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                //txtTotalAmount.setText("Total Price = Rs." + String.valueOf(overTotalPrice));
+                Intent intent = new Intent(clothes_cart.this, addCard.class);
+               intent.putExtra("Total Price", String.valueOf(overTotalPrice));
+                startActivity(intent);
+               finish();
+            }
+        });
 
     }
 
@@ -68,6 +82,10 @@ public class clothes_cart extends AppCompatActivity
                 holder.txtProductQuantity.setText("Quantity = " + model.getQuantity());
                 holder.txtProductPrice.setText("Price = Rs." + model.getPrice() + ".00");
                 holder.txtProductName.setText("Name = " + model.getPname() );
+
+                int oneTypeProductTPrice = ((Integer.valueOf(model.getPrice()))) * Integer.valueOf(model.getQuantity());
+                overTotalPrice = overTotalPrice + oneTypeProductTPrice;
+                txtTotalAmount.setText("Total Price = Rs." + String.valueOf(overTotalPrice));
 
                 holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override

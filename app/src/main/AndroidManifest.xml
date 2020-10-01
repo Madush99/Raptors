@@ -30,6 +30,11 @@
         <activity android:name=".PicassoExample" />
         <activity android:name=".MainActivity" />
         <activity android:name=".clothes_cart"/>
+        <activity android:name=".AdminProfile"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
 
     </application>

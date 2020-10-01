@@ -15,6 +15,7 @@ public class AdminMenu extends AppCompatActivity {
 
     private Button accD, addClothes, maintainClothes, logout;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,19 @@ public class AdminMenu extends AppCompatActivity {
         addClothes =(Button)findViewById(R.id.btnAddClothes);
         maintainClothes= (Button)findViewById(R.id.btnMain);
         logout = (Button)findViewById(R.id.btnlogout);
+
+
+
+
+        accD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminMenu.this,AdminProfile.class);
+                startActivity(intent);
+                Toast toast = Toast.makeText(AdminMenu.this, "Welcome To Admin Profile", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
 
 
         addClothes.setOnClickListener(new View.OnClickListener() {

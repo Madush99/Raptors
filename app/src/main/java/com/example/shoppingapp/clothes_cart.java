@@ -18,7 +18,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.shoppingapp.Model.Cart;
-import com.example.shoppingapp.Model.Users;
 import com.example.shoppingapp.Prevalent.Prevalent;
 import com.example.shoppingapp.ViewContent.CartViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;

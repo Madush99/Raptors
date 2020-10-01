@@ -154,7 +154,7 @@
             android:background="@color/colormadush"
             android:text="@string/shorts_skirts"
             android:textSize="17sp"
-            android:textColor="@color/colormadush"
+            android:textColor="@color/colordarkgrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.961"

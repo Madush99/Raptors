@@ -5,7 +5,8 @@
     android:id="@+id/btnSearchView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
 
         <Button
@@ -19,7 +20,7 @@
             android:text="Find Clothes Here"
             android:textAllCaps="true"
             android:textColor="@color/colorheliwhite"
-            android:textSize="11dp"
+            android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="@+id/textView"
             app:layout_constraintHorizontal_bias="0.031"
             app:layout_constraintStart_toStartOf="parent"
@@ -44,8 +45,9 @@
             android:layout_height="49dp"
             android:fontFamily="cursive"
             android:text="Helinsa "
+
             android:textColor="@color/colormadush"
-            android:textSize="100px"
+            android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.918"
@@ -119,8 +121,9 @@
             android:id="@+id/TopsBtn"
             android:layout_width="184dp"
             android:layout_height="44dp"
-            android:background="@color/colormadush"
+            android:background="@drawable/buttons1"
             android:text="Tops"
+            android:textSize="17sp"
             android:textColor="@color/colordarkgrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -133,8 +136,9 @@
             android:id="@+id/TShirtsBtn"
             android:layout_width="184dp"
             android:layout_height="44dp"
-            android:background="@color/colormadush"
+            android:background="@drawable/buttons1"
             android:text="T-Shirts"
+            android:textSize="17sp"
             android:textColor="@color/colordarkgrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -147,8 +151,9 @@
             android:id="@+id/ShortsBtn"
             android:layout_width="184dp"
             android:layout_height="44dp"
-            android:background="@color/colormadush"
+            android:background="@drawable/buttons1"
             android:text="@string/shorts_skirts"
+            android:textSize="17sp"
             android:textColor="@color/colordarkgrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -161,8 +166,9 @@
             android:id="@+id/DenimBtn"
             android:layout_width="184dp"
             android:layout_height="44dp"
-            android:background="@color/colormadush"
+            android:background="@drawable/buttons1"
             android:text="@string/denim_jeans"
+            android:textSize="17sp"
             android:textColor="@color/colordarkgrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -173,10 +179,11 @@
 
         <Button
             android:id="@+id/DressBtn"
-            android:layout_width="378dp"
+            android:layout_width="388dp"
             android:layout_height="53dp"
-            android:background="@color/colormadush"
+            android:background="@drawable/buttons1"
             android:text="@string/dresses_cords"
+            android:textSize="17sp"
             android:textColor="@color/colordarkgrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -271,19 +278,19 @@
 
         <TextView
             android:id="@+id/textView10"
-            android:layout_width="60dp"
-            android:layout_height="32dp"
+            android:layout_width="112dp"
+            android:layout_height="44dp"
             android:fontFamily="cursive"
             android:text="Helinsa "
+            android:textAlignment="center"
             android:textColor="@color/colormadush"
-            android:textSize="60px"
-
+            android:textSize="90px"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.948" />
+            app:layout_constraintVertical_bias="0.959" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

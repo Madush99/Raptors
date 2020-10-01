@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class controlPanel extends AppCompatActivity {
 
-    private Button carDetails,changeDetails;
+    private Button carDetails,changeDetails,logout;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +18,7 @@ public class controlPanel extends AppCompatActivity {
 
         carDetails = (Button)findViewById(R.id.add_card_details);
         changeDetails = (Button) findViewById(R.id.change_details);
+        logout = (Button) findViewById(R.id.logoutbtn1);
 
         carDetails.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +33,16 @@ public class controlPanel extends AppCompatActivity {
 
                 Intent intent= new Intent(controlPanel.this,change_card_details.class);
                 startActivity(intent);
+            }
+        });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                Intent intent = new Intent(controlPanel.this, login.class );
+                startActivity(intent);
+
             }
         });
 

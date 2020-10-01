@@ -44,6 +44,7 @@ public class ViewClothes extends AppCompatActivity {
 
         home1 = (ImageView) findViewById(R.id.shop1);
         me1 = (ImageView) findViewById(R.id.me1);
+        bag1 = (ImageView) findViewById(R.id.bag1);
 
         home1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +58,14 @@ public class ViewClothes extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ViewClothes.this,controlPanel.class);
+                startActivity(intent);
+            }
+        });
+
+        bag1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ViewClothes.this, clothes_cart.class);
                 startActivity(intent);
             }
         });

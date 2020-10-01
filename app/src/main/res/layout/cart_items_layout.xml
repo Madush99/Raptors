@@ -36,13 +36,13 @@
             android:id="@+id/cart_product_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_product_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"
             android:gravity="center"
             android:text="Product Price"
             android:textColor="@color/colorheliwhite"
-            android:textSize="15sp"
-            android:layout_marginLeft="5dp"
-            android:layout_below="@+id/cart_product_name"
-            android:layout_marginTop="10dp"/>
+            android:textSize="20sp" />
 
     </RelativeLayout>
 

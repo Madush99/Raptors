@@ -43,6 +43,8 @@ public class clothes_profile  extends AppCompatActivity
     private TextView productPrice, productDescription, productName;
     private String productID = "";
 
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

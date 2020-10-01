@@ -66,8 +66,8 @@ public class clothes_cart extends AppCompatActivity
             protected void onBindViewHolder(@NonNull CartViewHolder holder, int position, @NonNull final Cart model)
             {
                 holder.txtProductQuantity.setText("Quantity = " + model.getQuantity());
-                holder.txtProductPrice.setText("Price = Rs." + model.getPrice());
-                holder.txtProductName.setText("Name = " + model.getPname() + ".00");
+                holder.txtProductPrice.setText("Price = Rs." + model.getPrice() + ".00");
+                holder.txtProductName.setText("Name = " + model.getPname() );
 
                 holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override

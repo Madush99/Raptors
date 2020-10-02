@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -28,6 +29,9 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class wishList extends AppCompatActivity
 {
+
+    ImageView wishHome,wishList,wishBag,wishMe;
+
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private Button go_shoppingButton;
@@ -41,6 +45,45 @@ public class wishList extends AppCompatActivity
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+
+
+        wishHome = (ImageView) findViewById(R.id.homeWish);
+        wishList = (ImageView) findViewById(R.id.wishListImg);
+        wishBag = (ImageView) findViewById(R.id.WishbagImg);
+        wishMe = (ImageView) findViewById(R.id.WishmeImg);
+
+        wishHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(wishList.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        wishList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(wishList.this,wishList.class);
+                startActivity(intent);
+            }
+        });
+
+        wishBag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(wishList.this,clothes_cart.class);
+                startActivity(intent);
+            }
+        });
+
+        wishMe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(wishList.this,controlPanel.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 

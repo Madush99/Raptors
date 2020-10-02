@@ -37,7 +37,7 @@ public class clothes_profile  extends AppCompatActivity
 {
 
 
-    private Button addToCartButton1;
+    private Button addToCartButton1,addToWishlistButton;
     private ImageView productImage;
     private ElegantNumberButton numberButton;
     private TextView productPrice, productDescription, productName;
@@ -53,6 +53,7 @@ public class clothes_profile  extends AppCompatActivity
         productID = getIntent().getStringExtra("pid");
 
 
+        addToWishlistButton = (Button) findViewById(R.id.pd_add_to_wish_list);
         addToCartButton1 = (Button) findViewById(R.id.pd_add_to_cart_button);
         numberButton = (ElegantNumberButton) findViewById(R.id.number_btn);
         productImage = (ImageView) findViewById(R.id.product_image_details);
@@ -68,9 +69,62 @@ public class clothes_profile  extends AppCompatActivity
             public void onClick(View view) {
                 addingToCartList();
             }
+
+
+        });
+
+        addToWishlistButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addingToWishList();
+            }
         });
 
     }
+
+    private void addingToWishList() {
+
+        String saveCurrentTime, saveCurrentDate;
+
+        Calendar calForDate = Calendar.getInstance();
+        SimpleDateFormat currentDate = new SimpleDateFormat("MMM dd, yyyy");
+        saveCurrentDate = currentDate.format(calForDate.getTime());
+
+        SimpleDateFormat currentTime = new SimpleDateFormat("HH:mm:ss a");
+        saveCurrentTime = currentTime.format(calForDate.getTime());
+
+        final DatabaseReference cartListRef = FirebaseDatabase.getInstance().getReference().child("Wish List");
+
+        final HashMap<String, Object> cartMap = new HashMap<>();
+        cartMap.put("pid",productID);
+        cartMap.put("pname",productName.getText().toString());
+        cartMap.put("price",productPrice.getText().toString());
+        cartMap.put("date",saveCurrentDate);
+        cartMap.put("time",saveCurrentTime);
+        cartMap.put("quantity",numberButton.getNumber());
+        cartMap.put("discount","");
+
+
+        cartListRef.child("User View").child(Prevalent.currentOnlineUser.getPhone()).child("Products").child(productID).updateChildren(cartMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task)
+            {
+
+                                    if (task.isSuccessful())
+                                    {
+                                        Toast.makeText(clothes_profile.this, "Added to Wishlist", Toast.LENGTH_SHORT).show();
+                                        Intent intent = new Intent(clothes_profile.this,MainActivity.class);
+                                        startActivity(intent);
+
+                                    }
+                                }
+                            });
+
+
+                }
+
+
+
 
     private void addingToCartList()
     {
@@ -99,14 +153,6 @@ public class clothes_profile  extends AppCompatActivity
             @Override
             public void onComplete(@NonNull Task<Void> task)
             {
-               if (task.isSuccessful())
-               {
-                  cartListRef.child("Admin View").child(Prevalent.currentOnlineUser.getPhone())
-                           .child("Products").child(productID).updateChildren(cartMap)
-                          .addOnCompleteListener(new OnCompleteListener<Void>() {
-                               @Override
-                             public void onComplete(@NonNull Task<Void> task)
-                               {
 
                                     if (task.isSuccessful())
                                     {
@@ -121,12 +167,6 @@ public class clothes_profile  extends AppCompatActivity
 
                 }
 
-            }
-        });
-
-
-
-    }
 
 
     private void getProductDetails(String productID)

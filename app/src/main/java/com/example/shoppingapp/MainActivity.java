@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button b1,b2,b3,b4,b5,Search;
-    ImageView home,me,Bag;
+    ImageView home,me,Bag,wishList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         home = (ImageView) findViewById(R.id.homeImg);
         me = (ImageView) findViewById(R.id.MeImg);
         Bag = (ImageView) findViewById(R.id.BagImg);
+        wishList = (ImageView) findViewById(R.id.wishList);
 
 
         b1.setOnClickListener(this);
@@ -60,6 +61,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+        wishList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, wishList.class);
+                startActivity(intent);
+            }
+        });
 
 
         ImageView imageAnim = findViewById(R.id.imageAnim1);

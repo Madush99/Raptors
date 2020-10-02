@@ -32,7 +32,7 @@
 
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/wishList"
             android:layout_width="48dp"
             android:layout_height="38dp"
             app:layout_constraintBottom_toBottomOf="parent"

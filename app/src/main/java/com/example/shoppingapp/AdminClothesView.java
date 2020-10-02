@@ -35,10 +35,6 @@ public class AdminClothesView extends AppCompatActivity {
         ClothesList = findViewById(R.id.adminRecycle);
         ClothesList.setLayoutManager(new LinearLayoutManager(AdminClothesView.this));
 
-//        recyclerView = findViewById(R.id.adminRecycle);
-//        layoutManager = new LinearLayoutManager(this);
-//        recyclerView.setHasFixedSize(true);
-//        recyclerView.setLayoutManager(layoutManager);
     }
 
     @Override

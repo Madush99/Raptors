@@ -97,6 +97,8 @@ public class startup extends AppCompatActivity
                                 loadingBar.dismiss();
 
                                 Intent intent = new Intent(startup.this, MainActivity.class);
+                                Prevalent.currentOnlineUser = usersData;
+
                                 startActivity(intent);
                             }
                             else

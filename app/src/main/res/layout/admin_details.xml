@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminProfile">
+
+    <Button
+        android:id="@+id/passUpdate"
+        android:layout_width="378dp"
+        android:layout_height="53dp"
+        android:background="@color/colormadush"
+        android:text="Save New Password"
+        android:textColor="@color/colordarkgrey"
+        android:fontFamily="@font/aubrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.775" />
+
+    <TextView
+        android:id="@+id/fg"
+        android:layout_width="393dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="cursive"
+        android:text="Helinsa "
+        android:textAlignment="center"
+        android:textColor="@color/colormadush"
+        android:textSize="120px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/adminqw"
+        android:layout_width="120dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/aubrey"
+        android:text="Admin Name:"
+        android:textColor="@color/colordarkslategray"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
+
+    <TextView
+        android:id="@+id/adminName"
+        android:layout_width="173dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/aubrey"
+        android:textColor="@color/colordarkslategray"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
+
+    <TextView
+        android:id="@+id/adminPhone"
+        android:layout_width="173dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/aubrey"
+        android:textColor="@color/colordarkslategray"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.425" />
+
+    <EditText
+        android:id="@+id/adminPass"
+        android:layout_width="173dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/aubrey"
+        android:textColor="@color/colordarkslategray"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
+
+    <TextView
+        android:id="@+id/adminName2"
+        android:layout_width="120dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/aubrey"
+        android:text="Phone:"
+        android:textColor="@color/colordarkslategray"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427" />
+
+    <TextView
+        android:id="@+id/adminName3"
+        android:layout_width="120dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/aubrey"
+        android:text="Password:"
+        android:textColor="@color/colordarkslategray"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aubrey"
+        android:text="Admin User Profile"
+        android:textAlignment="center"
+        android:textColor="@color/colordarkslategray"
+        android:textSize="90px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

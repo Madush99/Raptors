@@ -1,6 +1,7 @@
 package com.example.shoppingapp;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button b1,b2,b3,b4,b5,Search;
-    ImageView home,me,bag;
+    ImageView home,me,Bag,wishList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Search = (Button) findViewById(R.id.btnSearchN);
         home = (ImageView) findViewById(R.id.homeImg);
         me = (ImageView) findViewById(R.id.MeImg);
+        Bag = (ImageView) findViewById(R.id.BagImg);
+        wishList = (ImageView) findViewById(R.id.wishList);
 
 
         b1.setOnClickListener(this);
@@ -50,6 +53,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+        Bag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,clothes_cart.class);
+                startActivity(intent);
+            }
+        });
+
+        wishList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, wishList.class);
+                startActivity(intent);
+            }
+        });
+
+
+        ImageView imageAnim = findViewById(R.id.imageAnim1);
+        AnimationDrawable animationDrawable = (AnimationDrawable)imageAnim.getDrawable();
+        animationDrawable.start();
+
+        ImageView imageAnim2 = findViewById(R.id.imageAnim2);
+        AnimationDrawable animationDrawable2 = (AnimationDrawable)imageAnim2.getDrawable();
+        animationDrawable2.start();
 
 
     }

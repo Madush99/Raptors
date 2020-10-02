@@ -74,17 +74,31 @@
         app:initialNumber="1"
         app:textSize="13sp" />
 
+
+    <Button
+        android:id="@+id/pd_add_to_wish_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pd_add_to_cart_button"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/buttons1"
+        android:text="Add to wishlist"
+        android:textColor="@color/colorheliwhite"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
     <Button
         android:id="@+id/pd_add_to_cart_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colormadush"
-        android:layout_margin="15dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/buttons1"
         android:text="Add to bag"
         android:textColor="@color/colorheliwhite"
         android:textSize="17sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
 </RelativeLayout>

@@ -5,46 +5,53 @@
     android:id="@+id/btnSearchView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
 
         <Button
             android:id="@+id/btnSearchN"
             android:layout_width="217dp"
-            android:layout_height="57dp"
-            android:background="@drawable/buttons1"
-            android:padding="20dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="276dp"
+            android:padding="15sp"
+            android:background="@color/colorheliwhite"
             android:text="Find Clothes Here"
             android:textAllCaps="true"
-            android:textColor="@color/colorheliwhite"
-            android:textSize="11dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/colordarkslategray"
+            android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="@+id/textView"
             app:layout_constraintHorizontal_bias="0.031"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.003" />
+            app:layout_constraintVertical_bias="0.003"
+
+        />
+
+
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="39dp"
-            android:layout_height="41dp"
+            android:id="@+id/wishList"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.247"
+            app:layout_constraintHorizontal_bias="0.22"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.949"
-            app:srcCompat="@drawable/category" />
+            app:layout_constraintVertical_bias="0.942"
+            app:srcCompat="@drawable/wish1" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="91dp"
-            android:layout_height="54dp"
+            android:layout_width="110dp"
+            android:layout_height="49dp"
             android:fontFamily="cursive"
             android:text="Helinsa "
+
             android:textColor="@color/colormadush"
-            android:textSize="100px"
+            android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.918"
@@ -52,39 +59,40 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="180dp"
-            android:layout_height="220dp"
-            android:layout_marginEnd="260dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.209"
-            app:srcCompat="@drawable/login" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="208dp"
-            android:layout_height="218dp"
-            android:layout_marginStart="248dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.208"
-            app:srcCompat="@drawable/register" />
 
         <ImageView
             android:id="@+id/imageView6"
-            android:layout_width="198dp"
-            android:layout_height="222dp"
+            android:layout_width="177dp"
+            android:layout_height="256dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.525"
+            app:layout_constraintHorizontal_bias="0.524"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.21"
-            app:srcCompat="@drawable/fg" />
+            app:layout_constraintVertical_bias="0.206"
+            app:srcCompat="@drawable/jk1" />
+
+        <ImageView
+            android:id="@+id/imageAnim2"
+            android:layout_width="230dp"
+            android:layout_height="254dp"
+            android:layout_marginStart="228dp"
+            android:src="@drawable/animation2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.207" />
+
+        <ImageView
+            android:id="@+id/imageAnim1"
+            android:layout_width="189dp"
+            android:layout_height="256dp"
+            android:layout_marginEnd="244dp"
+            android:src="@drawable/animation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.204" />
 
         <TextView
             android:id="@+id/textView4"
@@ -112,6 +120,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.525" />
 
+
         <Button
             android:id="@+id/TopsBtn"
             android:layout_width="184dp"
@@ -119,38 +128,40 @@
             android:background="@color/colormadush"
             android:text="Tops"
             android:textColor="@color/colordarkgrey"
+            android:textSize="13sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintHorizontal_bias="0.023"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.627" />
+            app:layout_constraintVertical_bias="0.629" />
 
         <Button
             android:id="@+id/TShirtsBtn"
-            android:layout_width="189dp"
-            android:layout_height="42dp"
+            android:layout_width="184dp"
+            android:layout_height="44dp"
             android:background="@color/colormadush"
             android:text="T-Shirts"
+            android:textSize="13sp"
             android:textColor="@color/colordarkgrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.936"
+            app:layout_constraintHorizontal_bias="0.965"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.627" />
-
+            app:layout_constraintVertical_bias="0.629" />
 
         <Button
             android:id="@+id/ShortsBtn"
-            android:layout_width="189dp"
-            android:layout_height="42dp"
+            android:layout_width="184dp"
+            android:layout_height="44dp"
             android:background="@color/colormadush"
             android:text="@string/shorts_skirts"
+            android:textSize="13sp"
             android:textColor="@color/colordarkgrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.936"
+            app:layout_constraintHorizontal_bias="0.961"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.716" />
@@ -161,20 +172,22 @@
             android:layout_height="44dp"
             android:background="@color/colormadush"
             android:text="@string/denim_jeans"
+            android:textSize="12sp"
             android:textColor="@color/colordarkgrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintHorizontal_bias="0.023"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.717" />
 
         <Button
             android:id="@+id/DressBtn"
-            android:layout_width="378dp"
+            android:layout_width="388dp"
             android:layout_height="53dp"
             android:background="@color/colormadush"
             android:text="@string/dresses_cords"
+            android:textSize="12sp"
             android:textColor="@color/colordarkgrey"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -193,7 +206,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.943"
-            app:srcCompat="@drawable/jn"/>
+            app:srcCompat="@drawable/jn" />
 
         <ImageView
             android:id="@+id/BagImg"
@@ -201,7 +214,7 @@
             android:layout_height="41dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.742"
+            app:layout_constraintHorizontal_bias="0.756"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.943"
@@ -233,15 +246,15 @@
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="CATEGORY"
+            android:layout_width="67dp"
+            android:layout_height="17dp"
+            android:text="WISHLIST"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.235"
+            app:layout_constraintHorizontal_bias="0.22"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.991" />
+            app:layout_constraintVertical_bias="0.988" />
 
         <TextView
             android:id="@+id/textView8"
@@ -269,19 +282,19 @@
 
         <TextView
             android:id="@+id/textView10"
-            android:layout_width="60dp"
-            android:layout_height="32dp"
+            android:layout_width="112dp"
+            android:layout_height="44dp"
             android:fontFamily="cursive"
             android:text="Helinsa "
+            android:textAlignment="center"
             android:textColor="@color/colormadush"
-            android:textSize="60px"
-
+            android:textSize="90px"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.948" />
+            app:layout_constraintVertical_bias="0.949" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

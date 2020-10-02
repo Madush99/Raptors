@@ -2,18 +2,20 @@ package com.example.shoppingapp.Model;
 
 public class Users
 {
-    private String email, name, password, phone;
+    private String email, name, password, phone, image, address;
 
     public Users()
     {
 
     }
 
-    public Users(String email, String name, String password, String phone) {
+    public Users(String email, String name, String password, String phone, String image, String address) {
         this.email = email;
         this.name = name;
         this.password = password;
         this.phone = phone;
+        this.image = image;
+        this.address = address;
     }
 
     public String getEmail() {
@@ -46,5 +48,21 @@ public class Users
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }

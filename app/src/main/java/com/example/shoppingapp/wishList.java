@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -27,39 +26,23 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class clothes_cart extends AppCompatActivity
+public class wishList extends AppCompatActivity
 {
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
-    private Button cartBuyButton;
-    private TextView txtTotalAmount;
-
-    private int overTotalPrice = 0;
+    private Button go_shoppingButton;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.clothes_cart);
+        setContentView(R.layout.wish_list);
 
-        recyclerView = findViewById(R.id.cart_list);
+        recyclerView = findViewById(R.id.w_list);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        cartBuyButton = (Button) findViewById(R.id.cart_buy_btn);
-        txtTotalAmount = (TextView) findViewById(R.id.total_price);
 
-        cartBuyButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                //txtTotalAmount.setText("Total Price = Rs." + String.valueOf(overTotalPrice));
-                Intent intent = new Intent(clothes_cart.this, addCard.class);
-               intent.putExtra("Total Price", String.valueOf(overTotalPrice));
-                startActivity(intent);
-               finish();
-            }
-        });
 
     }
 
@@ -68,24 +51,20 @@ public class clothes_cart extends AppCompatActivity
     {
         super.onStart();
 
-        final DatabaseReference cartListRef = FirebaseDatabase.getInstance().getReference().child("Carts List");
+        final DatabaseReference wishListRef = FirebaseDatabase.getInstance().getReference().child("Wish List");
 
         FirebaseRecyclerOptions<Cart> options = new FirebaseRecyclerOptions.Builder<Cart>()
-                .setQuery(cartListRef.child("User View")
-                .child(Prevalent.currentOnlineUser.getPhone()).child("Products"), Cart.class)
+                .setQuery(wishListRef.child("User View")
+                        .child(Prevalent.currentOnlineUser.getPhone()).child("Products"), Cart.class)
                 .build();
 
         FirebaseRecyclerAdapter<Cart, CartViewHolder> adapter = new FirebaseRecyclerAdapter<Cart, CartViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull CartViewHolder holder, int position, @NonNull final Cart model)
             {
-                holder.txtProductQuantity.setText("Quantity = " + model.getQuantity());
-                holder.txtProductPrice.setText("Price = Rs." + model.getPrice() + ".00");
-                holder.txtProductName.setText("Name = " + model.getPname() );
 
-                int oneTypeProductTPrice = ((Integer.valueOf(model.getPrice()))) * Integer.valueOf(model.getQuantity());
-                overTotalPrice = overTotalPrice + oneTypeProductTPrice;
-                txtTotalAmount.setText("Total Price = Rs." + String.valueOf(overTotalPrice));
+                holder.txtProductPrice.setText(model.getPrice());
+                holder.txtProductName.setText(model.getPname());
 
                 holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -93,12 +72,11 @@ public class clothes_cart extends AppCompatActivity
                     {
                         CharSequence options[] = new CharSequence[]
                                 {
-                                        "Edit",
                                         "Delete"
 
                                 };
-                        AlertDialog.Builder builder= new AlertDialog.Builder(clothes_cart.this);
-                        builder.setTitle("Bag Options");
+                        AlertDialog.Builder builder= new AlertDialog.Builder(wishList.this);
+                        builder.setTitle("Wish List Options");
 
                         builder.setItems(options, new DialogInterface.OnClickListener() {
                             @Override
@@ -106,28 +84,28 @@ public class clothes_cart extends AppCompatActivity
                             {
                                 if (i==0)
                                 {
-                                    Intent intent = new Intent(clothes_cart.this, clothes_profile.class);
+                                    Intent intent = new Intent(wishList.this, clothes_profile.class);
                                     intent.putExtra("pid",model.getPid());
                                     startActivity(intent);
                                 }
 
                                 if (i==1)
                                 {
-                                    cartListRef.child("User View").child(Prevalent.currentOnlineUser.getPhone()).child("Products").child(model.getPid())
+                                    wishListRef.child("User View").child(Prevalent.currentOnlineUser.getPhone()).child("Products").child(model.getPid())
                                             .removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
-                                        public void onComplete(@NonNull Task<Void> task) 
+                                        public void onComplete(@NonNull Task<Void> task)
                                         {
                                             if (task.isSuccessful())
                                             {
-                                                Toast.makeText(clothes_cart.this, "Item removed successfully", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(wishList.this, "Item removed successfully", Toast.LENGTH_SHORT).show();
 
-                                                Intent intent = new Intent(clothes_cart.this, MainActivity.class);
+                                                Intent intent = new Intent(wishList.this, MainActivity.class);
 
                                                 startActivity(intent);
                                             }
-                                       
-                                            
+
+
                                         }
                                     });
 
@@ -147,7 +125,7 @@ public class clothes_cart extends AppCompatActivity
             @Override
             public CartViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
             {
-                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cart_items_layout, parent, false);
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.wishlist_items, parent, false);
                 CartViewHolder holder = new CartViewHolder(view);
                 return holder;
             }
@@ -156,4 +134,9 @@ public class clothes_cart extends AppCompatActivity
         recyclerView.setAdapter(adapter);
         adapter.startListening();
     }
+
+
+
+
 }
+

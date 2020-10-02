@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:duration="4000"
+        android:drawable="@drawable/frock2"/>
+    <item
+        android:duration="4000"
+        android:drawable="@drawable/login"/>
+    <item
+        android:duration="4000"
+        android:drawable="@drawable/cart2"/>
+    <item
+        android:duration="4000"
+        android:drawable="@drawable/girl1"/>
+    <item
+        android:duration="4000"
+        android:drawable="@drawable/girl2"/>
+    <item
+        android:duration="4000"
+        android:drawable="@drawable/girl3"/>
+    <item
+        android:duration="4000"
+        android:drawable="@drawable/frock1"/>
+    <item
+        android:duration="4000"
+        android:drawable="@drawable/girl4"/>
+    <item
+        android:duration="4000"
+        android:drawable="@drawable/girl5"/>
+    <item
+        android:duration="4000"
+        android:drawable="@drawable/girl6"/>
+    <item
+        android:duration="4000"
+        android:drawable="@drawable/girl7"/>
+</animation-list>

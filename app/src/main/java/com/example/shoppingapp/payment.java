@@ -60,7 +60,7 @@ public class payment extends AppCompatActivity {
         cvv = (TextView)findViewById(R.id.payment_cvv);
         final String F_total = getIntent().getStringExtra("Total Price");
         fina_value.setText("Total:Rs."+F_total+".00");
-        Toast.makeText(getApplicationContext(),"Filled the above filed",Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(),"Fill the above filed",Toast.LENGTH_LONG).show();
 
         pay.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -9,6 +9,18 @@
     >
 
 
+        <View
+            style="@style/Divider.Horizontal"
+            android:layout_width="403dp"
+            android:layout_height="8dp"
+            android:background="#FF6666"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.517" />
+
         <TextView
             android:id="@+id/btnSearchN"
             android:layout_width="179dp"
@@ -74,32 +86,34 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.204" />
 
+
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SHOP BY "
-            android:textColor="@color/colordarkgrey"
+            android:text="SHOP BY"
+            android:textColor="#DF2B2B"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.374"
+            app:layout_constraintHorizontal_bias="0.371"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.525" />
+            app:layout_constraintVertical_bias="0.548" />
 
         <TextView
             android:id="@+id/textView5"
+            style="bold"
             android:layout_width="91dp"
             android:layout_height="20dp"
             android:text="CATEGORY"
             android:textColor="@color/colormadush"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.65"
+            app:layout_constraintHorizontal_bias="0.625"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.525" />
-
+            app:layout_constraintVertical_bias="0.548" />
 
         <Button
             android:id="@+id/TopsBtn"
@@ -294,6 +308,32 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.001"
             app:srcCompat="@drawable/logoname" />
+
+        <View
+            android:id="@+id/view"
+            style="@style/Divider.Horizontal"
+            android:layout_width="403dp"
+            android:layout_height="8dp"
+            android:background="#DF2B2B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.877" />
+
+        <View
+            android:id="@+id/view2"
+            style="@style/Divider.Horizontal"
+            android:layout_width="403dp"
+            android:layout_height="8dp"
+            android:background="#DF2B2B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.092" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

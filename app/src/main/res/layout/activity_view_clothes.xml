@@ -11,7 +11,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/border">
 
         <TextView
             android:id="@+id/productName"
@@ -53,6 +54,7 @@
             android:textAlignment="center"
             android:textSize="18dp"
             android:layout_marginTop="2dp"
+            android:textStyle="bold"
             android:textColor="@color/colordarkslategray"
             />
 

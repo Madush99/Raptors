@@ -35,16 +35,17 @@
 
     <TextView
         android:id="@+id/product_description_details"
-        android:layout_width="match_parent"
+        android:layout_width="358dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/product_name_details"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:gravity="center"
         android:text="Description"
         android:textColor="@color/colormadush"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/product_price_details"
@@ -109,5 +110,19 @@
         android:textColor="@color/colorheliwhite"
         android:textSize="17sp"
         android:textStyle="bold" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="532dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="193dp"
+        android:background="@drawable/border2" />
+
 
 </RelativeLayout>

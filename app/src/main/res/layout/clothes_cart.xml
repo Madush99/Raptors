@@ -195,6 +195,7 @@
             android:layout_width="match_parent"
             android:text="Total Price = "
             android:textColor="@color/colorheliwhite"
+
             android:textSize="20sp"
             android:textAlignment="center"
             android:layout_marginTop="10dp"

@@ -5,15 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="10dp"
     app:cardElevation="15dp">
-    
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="10dp"
-
-
         android:radius="15dp"
-
         android:background="@drawable/buttons1">
 
 
@@ -49,7 +46,10 @@
             android:textColor="@color/colorheliwhite"
             android:textSize="20sp" />
 
+
+
     </RelativeLayout>
+
 
 
 

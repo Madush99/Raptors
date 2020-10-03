@@ -46,7 +46,7 @@ public class addCard extends AppCompatActivity {
         add = (Button)findViewById(R.id.add);
 
         crdphone = Prevalent.currentOnlineUser.getPhone();
-        Phone.setText(crdphone);
+        Phone.setText("+94"+ crdphone);
 
 
         add.setOnClickListener(new View.OnClickListener() {

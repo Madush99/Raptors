@@ -45,6 +45,7 @@
             android:layout_height="49dp"
             android:fontFamily="cursive"
             android:text="Helinsa "
+            android:paddingTop="8dp"
 
             android:textColor="@color/colormadush"
             android:textSize="40sp"
@@ -284,7 +285,7 @@
             android:text="Helinsa "
             android:textAlignment="center"
             android:textColor="@color/colormadush"
-            android:textSize="90px"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.494"

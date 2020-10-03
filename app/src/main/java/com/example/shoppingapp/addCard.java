@@ -130,7 +130,7 @@ public class addCard extends AppCompatActivity {
                         if(task.isSuccessful()){
 
 
-                            Toast.makeText(getApplicationContext(),"added succesfull",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(),"Added succesfull",Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(addCard.this,controlPanel.class);
                             startActivity(intent);
 

@@ -86,7 +86,7 @@ public class clothes_cart extends AppCompatActivity
 
                 int oneTypeProductTPrice = ((Integer.valueOf(model.getPrice()))) * Integer.valueOf(model.getQuantity());
                 overTotalPrice = overTotalPrice + oneTypeProductTPrice;
-                txtTotalAmount.setText("Total Price = Rs." + String.valueOf(overTotalPrice));
+                 txtTotalAmount.setText("Total Price = Rs." + String.valueOf(overTotalPrice));
 
 
 

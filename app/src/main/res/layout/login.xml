@@ -4,18 +4,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    
-    <TextView
+
+    <ImageView
         android:id="@+id/login_shoplogo"
-        android:layout_width="300dp"
-        android:layout_height="125dp"
+        android:layout_width="wrap_content"
+        android:layout_height="257dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
         android:layout_marginEnd="20dp"
         android:fontFamily="cursive"
+        android:src="@drawable/applogo1"
         android:text="Helinsa"
         android:textColor="@color/colormadush"
         android:textSize="100sp"
@@ -25,25 +26,24 @@
         app:layout_constraintStart_toStartOf="@+id/searchView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.052" />
-    
-    
+
+
     <EditText
         android:id="@+id/login_phonenumber_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/login_shoplogo"
-        android:background="@drawable/input_design"
-        android:padding="15dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="57dp"
         android:layout_marginRight="15dp"
+        android:background="@drawable/input_design"
         android:hint="Phone Number"
         android:inputType="number"
+        android:padding="15dp"
         android:textColor="@color/colormadush"
         android:textColorHint="@color/colordarkgrey"
         android:textSize="20sp"
-        android:textStyle="bold"
-        />
-
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/login_password_input"

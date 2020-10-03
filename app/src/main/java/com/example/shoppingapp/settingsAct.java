@@ -7,14 +7,13 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-
-import com.example.shoppingapp.Model.Clothes;
 import com.example.shoppingapp.Prevalent.Prevalent;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -27,8 +26,8 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
-import com.theartofdev.edmodo.cropper.CropImage;
 import com.squareup.picasso.Picasso;
+import com.theartofdev.edmodo.cropper.CropImage;
 
 import java.util.HashMap;
 
@@ -38,7 +37,8 @@ public class settingsAct extends AppCompatActivity
 {
     private CircleImageView profileImageView;
     private EditText fullNameEditText, userPhoneEditText, addressEditText;
-    private TextView profileChangeTextBtn,  closeTextBtn, saveTextButton;
+    private TextView profileChangeTextBtn,  closeTextBtn, saveTextButton,userBack;
+    private ImageView userHome,userWish,userBag,userMe;
 
     private Uri imageUri;
     private String myUrl = "";
@@ -62,6 +62,54 @@ public class settingsAct extends AppCompatActivity
         profileChangeTextBtn = (TextView) findViewById(R.id.profile_image_change_btn);
         closeTextBtn = (TextView) findViewById(R.id.buttond);
         saveTextButton = (TextView) findViewById(R.id.button11);
+
+        userHome = (ImageView) findViewById(R.id.userHome);
+        userWish = (ImageView) findViewById(R.id.userWish);
+        userBag = (ImageView) findViewById(R.id.userBag);
+        userMe = (ImageView) findViewById(R.id.userMe);
+        userBack = (TextView) findViewById(R.id.userBack);
+
+
+        userHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(settingsAct.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        userWish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(settingsAct.this,wishList.class);
+                startActivity(intent);
+            }
+        });
+
+        userBag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(settingsAct.this,clothes_cart.class);
+                startActivity(intent);
+            }
+        });
+
+        userMe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(settingsAct.this,controlPanel.class);
+                startActivity(intent);
+            }
+        });
+
+        userBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(settingsAct.this,controlPanel.class);
+                startActivity(intent);
+            }
+        });
+
 
 
         userInfoDisplay(profileImageView, fullNameEditText, userPhoneEditText, addressEditText);

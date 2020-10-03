@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,7 +27,8 @@ public class ViewClothes extends AppCompatActivity {
     private RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
 
-    ImageView home1,me1,bag1;
+    private ImageView home1,me1,bag1,wishIcon;
+    private TextView topic;
 
 
     @Override
@@ -45,6 +47,9 @@ public class ViewClothes extends AppCompatActivity {
         home1 = (ImageView) findViewById(R.id.shop1);
         me1 = (ImageView) findViewById(R.id.me1);
         bag1 = (ImageView) findViewById(R.id.bag1);
+        wishIcon = (ImageView) findViewById(R.id.wishIconView);
+        topic = (TextView) findViewById(R.id.topic);
+
 
         home1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +75,14 @@ public class ViewClothes extends AppCompatActivity {
             }
         });
 
+        wishIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ViewClothes.this, wishList.class);
+                startActivity(intent);
+            }
+        });
+
 
 
     }
@@ -78,6 +91,7 @@ public class ViewClothes extends AppCompatActivity {
     protected void onStart() {
 
         final String cat = getIntent().getStringExtra("Category");
+        topic.setText(String.valueOf(cat));
         super.onStart();
 
         FirebaseRecyclerOptions<Clothes> options =

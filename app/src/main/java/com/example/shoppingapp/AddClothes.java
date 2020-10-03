@@ -34,7 +34,7 @@ public class AddClothes extends AppCompatActivity  {
 
     private String CategoryName,Description,Price,productName, savedDate, saveTime;
     private Button AddNewClothes;
-    private ImageView image;
+    private ImageView image,clothHome,clotheProfile;
     private EditText name, description, price;
     private static final int GalleryPick = 1;
     private Uri ImageUri;
@@ -55,6 +55,8 @@ public class AddClothes extends AppCompatActivity  {
 
         AddNewClothes = (Button) findViewById(R.id.btnAddClothes);
         image = (ImageView) findViewById(R.id.imgAdd);
+        clothHome = (ImageView) findViewById(R.id.clotheHome);
+        clotheProfile = (ImageView) findViewById(R.id.clothesProfile);
         name = (EditText) findViewById(R.id.txtName);
         description = (EditText) findViewById(R.id.txtDesc);
         price = (EditText) findViewById(R.id.txtPrice);
@@ -71,6 +73,22 @@ public class AddClothes extends AppCompatActivity  {
             @Override
             public void onClick(View view) {
                 ValidateProductData();
+            }
+        });
+
+        clothHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddClothes.this, AdminMenu.class);
+                startActivity(intent);
+            }
+        });
+
+        clotheProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddClothes.this, AdminProfile.class);
+                startActivity(intent);
             }
         });
 

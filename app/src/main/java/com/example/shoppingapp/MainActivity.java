@@ -6,13 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    Button b1,b2,b3,b4,b5,Search;
-    ImageView home,me,Bag,wishList;
+    private Button b1,b2,b3,b4,b5;
+    private TextView Search;
+    private ImageView home,me,Bag,wishList,searchIcon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +25,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b3 = (Button) findViewById(R.id.DenimBtn);
         b4 = (Button) findViewById(R.id.DressBtn);
         b5 = (Button) findViewById(R.id.ShortsBtn);
-        Search = (Button) findViewById(R.id.btnSearchN);
+        Search = (TextView) findViewById(R.id.btnSearchN);
         home = (ImageView) findViewById(R.id.homeImg);
         me = (ImageView) findViewById(R.id.MeImg);
         Bag = (ImageView) findViewById(R.id.BagImg);
         wishList = (ImageView) findViewById(R.id.wishList);
+        searchIcon = (ImageView) findViewById(R.id.searchIcon);
 
 
         b1.setOnClickListener(this);
@@ -38,6 +40,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b5.setOnClickListener(this);
 
         Search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        searchIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,SearchActivity.class);
@@ -84,28 +94,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-        Toast.makeText(this,"Button Selcted",Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(getApplicationContext(), ViewClothes.class);
 
         switch (v.getId()){
             case R.id.TopsBtn:
-                String Tops = "tops";
+                String Tops = "Tops";
                 intent.putExtra("Category",Tops);
                 break;
             case R.id.TShirtsBtn:
-                String TShirts = "tshirts";
+                String TShirts = "T shirts";
                 intent.putExtra("Category",TShirts);
                 break;
             case R.id.DenimBtn:
-                String Den = "denims";
+                String Den = "Denims & Jeans";
                 intent.putExtra("Category",Den);
                 break;
             case R.id.DressBtn:
-                String DressN = "dress";
+                String DressN = "Dresses & Codes";
                 intent.putExtra("Category",DressN);
                 break;
             case R.id.ShortsBtn:
-                String ShortsN = "skirts";
+                String ShortsN = "Shorts & Skirts";
                 intent.putExtra("Category",ShortsN);
                 break;
         }

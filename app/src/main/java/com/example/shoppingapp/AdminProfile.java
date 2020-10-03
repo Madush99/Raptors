@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +25,7 @@ public class AdminProfile extends AppCompatActivity {
     private TextView adminName,adminPhone;
     private EditText adminPass;
     private Button save;
+    private ImageView userhome,userprofile;
     DatabaseReference dbSave;
 
 
@@ -36,6 +38,8 @@ public class AdminProfile extends AppCompatActivity {
         adminPhone = (TextView) findViewById(R.id.adminPhone);
         adminPass = (EditText)findViewById(R.id.adminPass);
         save = (Button)findViewById(R.id.passUpdate);
+        userhome = (ImageView) findViewById(R.id.UserHome);
+        userprofile = (ImageView) findViewById(R.id.UserProfile2);
 
         final Admins admin = new Admins();
 
@@ -70,6 +74,23 @@ public class AdminProfile extends AppCompatActivity {
                     }
                 });
 
+
+            }
+        });
+
+        userhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminProfile.this, AdminMenu.class);
+                startActivity(intent);
+            }
+        });
+
+        userprofile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminProfile.this, AdminProfile.class);
+                startActivity(intent);
 
             }
         });

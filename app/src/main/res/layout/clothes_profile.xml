@@ -24,6 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/product_image_details"
         android:text="Model"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
         android:paddingTop="10dp"
         android:textColor="@color/colormadush"
         android:textSize="24sp"

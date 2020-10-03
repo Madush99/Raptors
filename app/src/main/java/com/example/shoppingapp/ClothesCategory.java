@@ -4,13 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ClothesCategory extends AppCompatActivity {
 
     private Button tops,tshirts,denims,skirts,dress;
-
+    private ImageView catHome, catProfile;
 
 
     @Override
@@ -23,6 +24,9 @@ public class ClothesCategory extends AppCompatActivity {
         denims = (Button) findViewById(R.id.btndenim);
         skirts = (Button) findViewById(R.id.btnskirts);
         dress = (Button) findViewById(R.id.btndress);
+
+        catHome = (ImageView) findViewById(R.id.catHome);
+        catProfile = (ImageView) findViewById(R.id.catProfile);
 
 
 
@@ -73,6 +77,21 @@ public class ClothesCategory extends AppCompatActivity {
             }
         });
 
+        catHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ClothesCategory.this, AdminMenu.class);
+                startActivity(intent);
+            }
+        });
+
+        catProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ClothesCategory.this, AdminProfile.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

@@ -30,7 +30,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class wishList extends AppCompatActivity
 {
 
-    ImageView wishHome,wishList,wishBag,wishMe;
+    private ImageView wishHome,wishList,wishBag,wishMe;
 
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
@@ -106,7 +106,7 @@ public class wishList extends AppCompatActivity
             protected void onBindViewHolder(@NonNull CartViewHolder holder, int position, @NonNull final Cart model)
             {
 
-                holder.txtProductPrice.setText(model.getPrice());
+                holder.txtProductPrice.setText("Rs."+model.getPrice()+".00");
                 holder.txtProductName.setText(model.getPname());
 
                 holder.itemView.setOnClickListener(new View.OnClickListener() {

@@ -20,21 +20,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.377" />
 
-    <TextView
+    <ImageView
         android:id="@+id/textView63"
-        android:layout_width="288dp"
-        android:layout_height="55dp"
-        android:layout_marginEnd="40dp"
-        android:fontFamily="cursive"
-        android:text="Helinsa  Admin"
-        android:textColor="@color/colormadush"
-        android:textSize="100px"
+        android:layout_width="306dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="44dp"
+        android:src="@drawable/logonameadmin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/searchView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintVertical_bias="0.043" />
 
     <TextView
         android:id="@+id/textView51"

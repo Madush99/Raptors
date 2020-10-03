@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,6 +34,7 @@ public class clothes_cart extends AppCompatActivity
     private RecyclerView.LayoutManager layoutManager;
     private Button cartBuyButton;
     private TextView txtTotalAmount;
+    private ImageView cartHome,cartBag,cartWishlist,cartMe;
 
     private int overTotalPrice = 0;
 
@@ -48,6 +50,10 @@ public class clothes_cart extends AppCompatActivity
 
         cartBuyButton = (Button) findViewById(R.id.cart_buy_btn);
         txtTotalAmount = (TextView) findViewById(R.id.total_price);
+        cartHome =(ImageView) findViewById(R.id.cartHome);
+        cartBag = (ImageView) findViewById(R.id.cartBag);
+        cartMe = (ImageView) findViewById(R.id.cartMe);
+        cartWishlist =(ImageView) findViewById(R.id.cartWish);
 
         cartBuyButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +65,38 @@ public class clothes_cart extends AppCompatActivity
                 startActivity(intent);
 
                finish();
+            }
+        });
+
+        cartHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(clothes_cart.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cartWishlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(clothes_cart.this, wishList.class);
+                startActivity(intent);
+            }
+        });
+
+        cartBag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(clothes_cart.this, clothes_cart.class);
+                startActivity(intent);
+            }
+        });
+
+        cartMe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(clothes_cart.this, controlPanel.class);
+                startActivity(intent);
             }
         });
 

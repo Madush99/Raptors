@@ -295,7 +295,7 @@ public class settingsAct extends AppCompatActivity
                 {
                     if (dataSnapshot.child("image").exists())
                     {
-                        Toast.makeText(getApplicationContext(),"aaaaaaaaaaaaaaaaaaaaaa",Toast.LENGTH_SHORT).show();
+
                         String image = dataSnapshot.child("image").getValue().toString();
                         String name = dataSnapshot.child("name").getValue().toString();
                         String phone = dataSnapshot.child("phone").getValue().toString();

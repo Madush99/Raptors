@@ -47,15 +47,29 @@
         />
 
     <TextView
-        android:id="@+id/product_price_details"
+    android:id="@+id/product_price_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/product_description_details"
+    android:text="Price"
+    android:textColor="@color/colormadush"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+
+    />
+
+    <TextView
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/product_description_details"
-        android:text="Price"
+        android:text="Rs."
         android:textColor="@color/colormadush"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:gravity="center"
+        android:paddingLeft="130dp"
         android:layout_marginTop="10dp"
 
         />

@@ -182,7 +182,7 @@ public class clothes_profile  extends AppCompatActivity
                     Clothes clothes = snapshot.getValue(Clothes.class);
 
                     productName.setText(clothes.getName());
-                    productPrice.setText("Rs." + clothes.getPrice()+".00");
+                    productPrice.setText(clothes.getPrice());
                     productDescription.setText(clothes.getDescription());
                     Picasso.get().load(clothes.getImage()).into(productImage);
                 }

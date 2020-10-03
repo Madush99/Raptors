@@ -32,12 +32,14 @@
         <activity android:name=".AdminProfile"/>
         <activity android:name=".settingsAct"/>
         <activity android:name=".wishList"/>
+        <activity android:name=".payment"/>
         <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat"/>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
 
 
     </application>

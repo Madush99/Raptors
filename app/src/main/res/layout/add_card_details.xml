@@ -79,7 +79,7 @@
         android:layout_height="45dp"
         android:background="#FFFFFF"
         android:fontFamily="sans-serif-condensed"
-        android:text="Payment Methods"
+        android:text="Payment Details"
         android:textColor="#0E0E0E"
         android:textSize="31sp"
         android:textStyle="bold"
@@ -205,7 +205,7 @@
 
     <EditText
         android:id="@+id/fname"
-        android:layout_width="178dp"
+        android:layout_width="170dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -239,7 +239,7 @@
 
     <EditText
         android:id="@+id/lname"
-        android:layout_width="178dp"
+        android:layout_width="170dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -249,10 +249,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.986"
+        app:layout_constraintHorizontal_bias="0.935"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.557" />
+        app:layout_constraintVertical_bias="0.558" />
 
     <TextView
         android:id="@+id/textView41"
@@ -276,10 +276,11 @@
 
     <EditText
         android:id="@+id/phone"
-        android:layout_width="272dp"
+        android:layout_width="260dp"
         android:layout_height="42dp"
         android:ems="10"
         android:inputType="phone"
+        android:text="+94  |"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.151"
@@ -302,15 +303,14 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.738" />
-
+        app:layout_constraintVertical_bias="0.741" />
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="272dp"
+        android:layout_width="260dp"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textEmailAddress"
@@ -354,6 +354,66 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.965" />
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="27dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549"
+        app:srcCompat="@drawable/pay_user123" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="27dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427"
+        app:srcCompat="@drawable/padlock_pay" />
+
+    <ImageView
+        android:id="@+id/imageView58"
+        android:layout_width="27dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427"
+        app:srcCompat="@drawable/calender_pay" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="27dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.662"
+        app:srcCompat="@drawable/pay_phone123" />
+
+    <ImageView
+        android:id="@+id/imageView59"
+        android:layout_width="27dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549"
+        app:srcCompat="@drawable/pay_user123" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

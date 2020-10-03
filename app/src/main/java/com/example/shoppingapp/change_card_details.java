@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.shoppingapp.Prevalent.Prevalent;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
@@ -31,7 +32,7 @@ public class change_card_details extends AppCompatActivity {
         setContentView(R.layout.remove_update);
 
 
-                db_reff = FirebaseDatabase.getInstance().getReference().child("payment");
+                db_reff = FirebaseDatabase.getInstance().getReference().child("payment").child(Prevalent.currentOnlineUser.getPhone());
                 db_reff.addListenerForSingleValueEvent(new ValueEventListener()
 
                 {
@@ -76,7 +77,7 @@ public class change_card_details extends AppCompatActivity {
 
     private void deleteData() {
 
-        DatabaseReference cardDetails = FirebaseDatabase.getInstance().getReference("payment");
+        DatabaseReference cardDetails = FirebaseDatabase.getInstance().getReference("payment").child(Prevalent.currentOnlineUser.getPhone());
         cardDetails.removeValue()
         .addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override

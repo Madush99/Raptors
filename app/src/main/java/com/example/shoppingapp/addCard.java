@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.shoppingapp.Prevalent.Prevalent;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
@@ -114,7 +115,7 @@ public class addCard extends AppCompatActivity {
         addCrad.put("crdPhone",crdphone);
         addCrad.put("crdEmail",crdemail);
 
-        FirebaseDatabase.getInstance().getReference().child("payment").child(crdphone).updateChildren(addCrad)
+        FirebaseDatabase.getInstance().getReference().child("payment").child(Prevalent.currentOnlineUser.getPhone()).updateChildren(addCrad)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {

@@ -54,9 +54,10 @@ public class clothes_cart extends AppCompatActivity
             public void onClick(View view)
             {
                 //txtTotalAmount.setText("Total Price = Rs." + String.valueOf(overTotalPrice));
-                Intent intent = new Intent(clothes_cart.this, addCard.class);
+                Intent intent = new Intent(clothes_cart.this, payment.class);
                intent.putExtra("Total Price", String.valueOf(overTotalPrice));
                 startActivity(intent);
+
                finish();
             }
         });
@@ -86,6 +87,8 @@ public class clothes_cart extends AppCompatActivity
                 int oneTypeProductTPrice = ((Integer.valueOf(model.getPrice()))) * Integer.valueOf(model.getQuantity());
                 overTotalPrice = overTotalPrice + oneTypeProductTPrice;
                 txtTotalAmount.setText("Total Price = Rs." + String.valueOf(overTotalPrice));
+
+
 
                 holder.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override

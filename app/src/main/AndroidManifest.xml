@@ -14,7 +14,6 @@
         <activity android:name=".startup">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -29,6 +28,18 @@
         <activity android:name=".clothes_profile" />
         <activity android:name=".PicassoExample" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".clothes_cart"/>
+        <activity android:name=".AdminProfile"/>
+        <activity android:name=".settingsAct"/>
+        <activity android:name=".wishList"/>
+        <activity android:name=".payment"/>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
 
 
     </application>

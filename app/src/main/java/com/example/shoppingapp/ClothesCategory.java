@@ -1,15 +1,16 @@
 package com.example.shoppingapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class ClothesCategory extends AppCompatActivity {
 
     private Button tops,tshirts,denims,skirts,dress;
+
 
 
     @Override
@@ -24,11 +25,12 @@ public class ClothesCategory extends AppCompatActivity {
         dress = (Button) findViewById(R.id.btndress);
 
 
+
         tops.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ClothesCategory.this, AddClothes.class );
-                intent.putExtra("category","tops" );
+                intent.putExtra("category","Tops" );
                 startActivity(intent);
 
             }
@@ -38,7 +40,7 @@ public class ClothesCategory extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ClothesCategory.this,AddClothes.class);
-                intent.putExtra("category", "tshirts");
+                intent.putExtra("category", "T shirts");
                 startActivity(intent);
             }
         });
@@ -47,7 +49,7 @@ public class ClothesCategory extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ClothesCategory.this,AddClothes.class);
-                intent.putExtra("category", "denims");
+                intent.putExtra("category", "Denims & Jeans");
                 startActivity(intent);
 
             }
@@ -57,7 +59,7 @@ public class ClothesCategory extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ClothesCategory.this,AddClothes.class);
-                intent.putExtra("category", "skirts");
+                intent.putExtra("category", "Shorts & Skirts");
                 startActivity(intent);
             }
         });
@@ -66,9 +68,11 @@ public class ClothesCategory extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ClothesCategory.this,AddClothes.class);
-                intent.putExtra("category", "dress");
+                intent.putExtra("category", "Dresses & Codes");
                 startActivity(intent);
             }
         });
+
+
     }
 }

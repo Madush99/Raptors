@@ -67,7 +67,7 @@ public class AdminMaintainActivity extends AppCompatActivity {
         clothesRef.removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
-                Intent intent = new Intent(AdminMaintainActivity.this, AdminMenu.class);
+                Intent intent = new Intent(AdminMaintainActivity.this, AdminClothesView.class);
                 startActivity(intent);
                 Toast.makeText(AdminMaintainActivity.this, "Item Deleted Sucessfully", Toast.LENGTH_SHORT).show();
             }
@@ -100,7 +100,7 @@ public class AdminMaintainActivity extends AppCompatActivity {
                     if (task.isSuccessful()){
                         Toast.makeText(AdminMaintainActivity.this,"Changes Updated Successfully...",Toast.LENGTH_SHORT).show();
 
-                        Intent intent = new Intent(AdminMaintainActivity.this, AdminMenu.class);
+                        Intent intent = new Intent(AdminMaintainActivity.this, AdminClothesView.class);
                         startActivity(intent);
                     }
                 }

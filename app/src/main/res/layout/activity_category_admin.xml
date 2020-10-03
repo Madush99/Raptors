@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ClothesCategory">
 
+
     <Button
         android:id="@+id/btndress"
         android:layout_width="385dp"
@@ -80,4 +81,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.186" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="303dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/aubrey"
+        android:text="Add Clothes By Category"
+        android:textAlignment="center"
+        android:textColor="@color/colordarkslategray"
+        android:textSize="90px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

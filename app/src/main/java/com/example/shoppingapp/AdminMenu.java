@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class AdminMenu extends AppCompatActivity {
 
     private Button accD, addClothes, maintainClothes, logout;
+    private ImageView home,profile;
 
 
     @Override
@@ -23,6 +25,8 @@ public class AdminMenu extends AppCompatActivity {
         addClothes =(Button)findViewById(R.id.btnAddClothes);
         maintainClothes= (Button)findViewById(R.id.btnMain);
         logout = (Button)findViewById(R.id.btnlogout);
+        home = (ImageView) findViewById(R.id.menuHome);
+        profile = (ImageView) findViewById(R.id.menuProfile);
 
 
 
@@ -67,6 +71,22 @@ public class AdminMenu extends AppCompatActivity {
                 startActivity(intent);
                 Toast.makeText(AdminMenu.this, "Logged Out Successfully", Toast.LENGTH_SHORT).show();
 
+            }
+        });
+
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminMenu.this, AdminProfile.class);
+                startActivity(intent);
+            }
+        });
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminMenu.this, AdminMenu.class);
+                startActivity(intent);
             }
         });
 

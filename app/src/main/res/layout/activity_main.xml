@@ -9,27 +9,23 @@
     >
 
 
-        <Button
+        <TextView
             android:id="@+id/btnSearchN"
-            android:layout_width="217dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="276dp"
-            android:padding="15sp"
+            android:layout_width="179dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
             android:background="@color/colorheliwhite"
+            android:padding="15sp"
             android:text="Find Clothes Here"
             android:textAllCaps="true"
             android:textColor="@color/colordarkslategray"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="@+id/textView"
-            app:layout_constraintHorizontal_bias="0.031"
+            app:layout_constraintHorizontal_bias="0.291"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.003"
 
-        />
-
-
+            />
 
         <ImageView
             android:id="@+id/wishList"
@@ -295,6 +291,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.949" />
+
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="62dp"
+            android:layout_height="46dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.011"
+            app:srcCompat="@drawable/search6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

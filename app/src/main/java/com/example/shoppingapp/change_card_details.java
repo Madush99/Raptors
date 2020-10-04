@@ -48,13 +48,9 @@ public class change_card_details extends AppCompatActivity {
                         email.setText(crdemail);
                         exp.setText(crdexp);
                         number.setText(crdnum);
-
-
                     }
-
                     @Override
                     public void onCancelled(@NonNull DatabaseError databaseError) {
-
                     }
                 });
 

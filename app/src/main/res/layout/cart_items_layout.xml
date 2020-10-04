@@ -9,19 +9,18 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/buttons1"
         android:padding="10dp"
-        android:radius="15dp"
-        android:background="@drawable/buttons1">
-
+        android:radius="15dp">
 
         <TextView
             android:id="@+id/cart_product_name"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
+            android:layout_width="177dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="5dp"
             android:text="Product Name"
             android:textColor="@color/colorheliwhite"
-            android:textSize="17sp"
-            android:layout_marginLeft="5dp"/>
+            android:textSize="17sp" />
 
         <TextView
             android:id="@+id/cart_product_quantity"
@@ -36,21 +35,22 @@
 
         <TextView
             android:id="@+id/cart_product_price"
-            android:layout_width="match_parent"
+            android:layout_width="144dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/cart_product_name"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="12dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
             android:gravity="left"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:text="Product Price"
             android:textColor="@color/colorheliwhite"
-            android:textSize="20sp" />
-
+            android:textSize="22sp" />
 
 
     </RelativeLayout>
-
-
 
 
 </androidx.cardview.widget.CardView>

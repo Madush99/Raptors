@@ -125,14 +125,8 @@ public class wishList extends AppCompatActivity
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i)
                             {
-                                if (i==0)
-                                {
-                                    Intent intent = new Intent(wishList.this, clothes_profile.class);
-                                    intent.putExtra("pid",model.getPid());
-                                    startActivity(intent);
-                                }
 
-                                if (i==1)
+                                if (i==0)
                                 {
                                     wishListRef.child("User View").child(Prevalent.currentOnlineUser.getPhone()).child("Products").child(model.getPid())
                                             .removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {

@@ -27,6 +27,9 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.squareup.picasso.Picasso;
+
+import static com.squareup.picasso.Picasso.*;
 
 public class clothes_cart extends AppCompatActivity
 {
@@ -43,10 +46,12 @@ public class clothes_cart extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.clothes_cart);
 
+
         recyclerView = findViewById(R.id.cart_list);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+
 
         cartBuyButton = (Button) findViewById(R.id.cart_buy_btn);
         txtTotalAmount = (TextView) findViewById(R.id.total_price);
@@ -118,9 +123,13 @@ public class clothes_cart extends AppCompatActivity
             @Override
             protected void onBindViewHolder(@NonNull CartViewHolder holder, int position, @NonNull final Cart model)
             {
+
+
                 holder.txtProductQuantity.setText("Quantity = " + model.getQuantity());
                 holder.txtProductPrice.setText("Price = Rs." + model.getPrice() + ".00");
                 holder.txtProductName.setText("Name = " + model.getPname() );
+                
+
 
                 int oneTypeProductTPrice = ((Integer.valueOf(model.getPrice()))) * Integer.valueOf(model.getQuantity());
                 overTotalPrice = overTotalPrice + oneTypeProductTPrice;

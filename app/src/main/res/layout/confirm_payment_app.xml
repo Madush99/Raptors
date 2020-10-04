@@ -7,9 +7,9 @@
     android:background="#FFFFFF">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="154dp"
-        android:layout_height="33dp"
+        android:id="@+id/price"
+        android:layout_width="374dp"
+        android:layout_height="34dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -17,37 +17,18 @@
         android:fontFamily="sans-serif-condensed"
         android:text="Total price:Rs.30000"
         android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
+        app:layout_constraintVertical_bias="0.203" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="145dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Payment details:"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.321" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="232dp"
-        android:layout_height="33dp"
+        android:id="@+id/f_name"
+        android:layout_width="370dp"
+        android:layout_height="29dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -55,45 +36,44 @@
         android:fontFamily="sans-serif-condensed"
         android:text="First name:Vihanga"
         android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintHorizontal_bias="0.84"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="232dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Last name:Deshan"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintVertical_bias="0.255" />
 
     <CheckedTextView
-        android:id="@+id/checkedTextView"
-        android:layout_width="363dp"
-        android:layout_height="111dp"
-        android:textSize="18sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="234dp"
-        tools:text="Logitech G402 Second Generation Wired Game Mouse RGB Professional Competition For Pc Mouse Gamer For Computer Laptop Accessories" />
+        android:id="@+id/deli_address"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:text="Buyer has confirmed order received"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363"
+        tools:ignore="MissingConstraints" />
+
+    <CheckedTextView
+        android:id="@+id/p_description"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:text="Buyer has confirmed order received"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/TShirtsBtn"
+        android:id="@+id/end_process"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:background="@drawable/btn"
@@ -105,8 +85,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.595" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
 
     <TextView
         android:id="@+id/textView14"
@@ -125,11 +105,13 @@
 
     <CheckedTextView
         android:id="@+id/checkedTextView2"
-        android:layout_width="177dp"
-        android:layout_height="24dp"
+        android:layout_width="341dp"
+        android:layout_height="102dp"
         android:background="#FFFFFF"
         android:text="Thanks for dealing with US!"
+        android:textAlignment="center"
         android:textColor="@color/colorAccent"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.461"
@@ -137,20 +119,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.785" />
 
-    <EditText
-        android:id="@+id/editTextTime"
-        android:layout_width="149dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="time"
-        android:text="Date:2020/10/8"
-        android:textColor="#716565"
-        android:textColorHint="#B8ADAD"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

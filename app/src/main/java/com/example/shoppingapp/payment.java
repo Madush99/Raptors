@@ -105,9 +105,6 @@ public class payment extends AppCompatActivity {
                         intent.putExtra("city",p_city);
                         intent.putExtra("postal",p_post);
                         intent.putExtra("phone",pay_phone);
-                        startActivity(intent);
-
-
 
                         startActivity(intent);
                     }

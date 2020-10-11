@@ -2,6 +2,7 @@ package com.example.shoppingapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -75,24 +76,42 @@ public class payment extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(getApplicationContext(),"Payment sccuess full",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(payment.this,payment_report.class);
 
-                String firstname = fname.getText().toString();
-                String lastname =lname.getText().toString();
-                String p_street =street.getText().toString();
-                String p_city =city.getText().toString();
-                String p_post =postal.getText().toString();
-                String pay_phone = phone.getText().toString();
 
-                intent.putExtra("amount",F_total);
-                intent.putExtra("cus_name",firstname);
-                intent.putExtra("cuslname",lastname);
-                intent.putExtra("street",p_street);
-                intent.putExtra("city",p_city);
-                intent.putExtra("postal",p_post);
-                intent.putExtra("phone",pay_phone);
-                startActivity(intent);
+
+
+                final Loading loading = new Loading(payment.this);
+                loading.PaymentLoadingAnimation();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        loading.dismissDialog();
+                        Intent intent = new Intent(getApplicationContext(), payment_report.class);
+
+
+
+                        String firstname = fname.getText().toString();
+                        String lastname =lname.getText().toString();
+                        String p_street =street.getText().toString();
+                        String p_city =city.getText().toString();
+                        String p_post =postal.getText().toString();
+                        String pay_phone = phone.getText().toString();
+
+                        intent.putExtra("amount",F_total);
+                        intent.putExtra("cus_name",firstname);
+                        intent.putExtra("cuslname",lastname);
+                        intent.putExtra("street",p_street);
+                        intent.putExtra("city",p_city);
+                        intent.putExtra("postal",p_post);
+                        intent.putExtra("phone",pay_phone);
+                        startActivity(intent);
+
+
+
+                        startActivity(intent);
+                    }
+                }, 5000);
 
 
             }

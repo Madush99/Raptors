@@ -81,6 +81,7 @@ public class AddClothes extends AppCompatActivity  {
             public void onClick(View v) {
                 Intent intent = new Intent(AddClothes.this, AdminMenu.class);
                 startActivity(intent);
+
             }
         });
 
@@ -141,8 +142,7 @@ public class AddClothes extends AppCompatActivity  {
     }
 
     private void storeProductInformation() {
-
-        loadingBar.setTitle("Add New Product");
+        loadingBar.setTitle("Adding New Cloth");
         loadingBar.setMessage("Please wait");
         loadingBar.setCanceledOnTouchOutside(false);
         loadingBar.show();
@@ -203,6 +203,8 @@ public class AddClothes extends AppCompatActivity  {
     }
 
     private void SaveProductInfoToDatabase() {
+
+
         HashMap<String,Object> productMap = new HashMap<>();
 
         productMap.put("pid",productRandomKey);

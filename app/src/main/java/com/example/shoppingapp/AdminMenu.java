@@ -24,9 +24,9 @@ public class AdminMenu extends AppCompatActivity {
         accD = (Button)findViewById(R.id.btnAcc);
         addClothes =(Button)findViewById(R.id.btnAddClothes);
         maintainClothes= (Button)findViewById(R.id.btnMain);
-        logout = (Button)findViewById(R.id.btnlogout);
         home = (ImageView) findViewById(R.id.menuHome);
         profile = (ImageView) findViewById(R.id.menuProfile);
+        logout = (Button)findViewById(R.id.btnlogout);
 
 
 
@@ -63,17 +63,6 @@ public class AdminMenu extends AppCompatActivity {
             }
         });
 
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-                Intent intent = new Intent(AdminMenu.this,login.class);
-                startActivity(intent);
-                Toast.makeText(AdminMenu.this, "Logged Out Successfully", Toast.LENGTH_SHORT).show();
-
-            }
-        });
-
         profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,6 +79,20 @@ public class AdminMenu extends AppCompatActivity {
             }
         });
 
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(AdminMenu.this,login.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                finishAffinity();
+                Toast.makeText(AdminMenu.this, "Logged Out Successfully", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
 
     }
+
 }

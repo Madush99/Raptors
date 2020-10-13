@@ -64,7 +64,8 @@ public class AdminMaintainActivity extends AppCompatActivity {
     }
 
     private void DeleteCloth(){
-        clothesRef.removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+        FirebaseDatabase.getInstance().getReference().child("Products").child(productID).
+        removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 Intent intent = new Intent(AdminMaintainActivity.this, AdminClothesView.class);

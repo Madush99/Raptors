@@ -146,6 +146,7 @@ public class login extends AppCompatActivity
 
                                 Intent intent = new Intent(login.this, AdminMenu.class);
                                 startActivity(intent);
+                                finish();
                             }
                             else if (parentDbName.equals("Users"))
                             {
@@ -154,6 +155,7 @@ public class login extends AppCompatActivity
 
                                 Intent intent = new Intent(login.this, MainActivity.class);
                                 startActivity(intent);
+                                finish();
                             }
 
                         }

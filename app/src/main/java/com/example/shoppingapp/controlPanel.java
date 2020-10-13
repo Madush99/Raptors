@@ -49,9 +49,10 @@ public class controlPanel extends AppCompatActivity {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+
                 Intent intent = new Intent(controlPanel.this, login.class );
                 startActivity(intent);
+                finishAffinity();
 
             }
         });

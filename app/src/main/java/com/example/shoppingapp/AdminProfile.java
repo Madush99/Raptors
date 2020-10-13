@@ -83,6 +83,7 @@ public class AdminProfile extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(AdminProfile.this, AdminMenu.class);
                 startActivity(intent);
+
             }
         });
 
@@ -91,6 +92,7 @@ public class AdminProfile extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(AdminProfile.this, AdminProfile.class);
                 startActivity(intent);
+
 
             }
         });

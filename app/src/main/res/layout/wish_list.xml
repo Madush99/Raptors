@@ -127,16 +127,17 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008" />
+        app:layout_constraintVertical_bias="0.011" />
 
     <androidx.recyclerview.widget.RecyclerView
+
         android:id="@+id/w_list"
         android:layout_width="394dp"
         android:layout_height="601dp"
         android:layout_above="@+id/cart_buy_btn"
-        android:layout_below="@+id/rl11"
+        android:layout_below="@+id/textView29"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="54dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="52dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

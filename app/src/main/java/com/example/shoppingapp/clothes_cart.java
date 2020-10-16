@@ -107,6 +107,7 @@ public class clothes_cart extends AppCompatActivity
 
     }
 
+
     @Override
     protected void onStart()
     {
@@ -128,7 +129,7 @@ public class clothes_cart extends AppCompatActivity
                 holder.txtProductQuantity.setText("Quantity = " + model.getQuantity());
                 holder.txtProductPrice.setText("Price = Rs." + model.getPrice() + ".00");
                 holder.txtProductName.setText("Name = " + model.getPname() );
-                
+
 
 
                 int oneTypeProductTPrice = ((Integer.valueOf(model.getPrice()))) * Integer.valueOf(model.getQuantity());

@@ -148,12 +148,11 @@ public class clothes_profile  extends AppCompatActivity
         cartMap.put("quantity",numberButton.getNumber());
         cartMap.put("discount","");
 
-
-        cartListRef.child("User View").child(Prevalent.currentOnlineUser.getPhone()).child("Products").child(productID).updateChildren(cartMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+        cartListRef.child("User View").child(Prevalent.currentOnlineUser.getPhone()).child("Products").child(productID).updateChildren(cartMap)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task)
             {
-
                                     if (task.isSuccessful())
                                     {
                                         Toast.makeText(clothes_profile.this, "Added to Bag", Toast.LENGTH_SHORT).show();
@@ -186,14 +185,10 @@ public class clothes_profile  extends AppCompatActivity
                     productDescription.setText(clothes.getDescription());
                     Picasso.get().load(clothes.getImage()).into(productImage);
                 }
-
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
-
         });
     }
 }

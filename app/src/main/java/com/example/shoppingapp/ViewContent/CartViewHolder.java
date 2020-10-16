@@ -16,6 +16,7 @@ public class CartViewHolder extends RecyclerView.ViewHolder implements View.OnCl
     private ItemClickListner itemClickListner;
     public ImageView clothimagecart;
 
+
     public CartViewHolder(@NonNull View itemView)
     {
         super(itemView);
